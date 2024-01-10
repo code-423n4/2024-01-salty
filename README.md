@@ -1,11 +1,13 @@
-# Build Instructions
+**Technical Overview (Gitbook)**\
+https://tech.salty.io
+
+**Build Instructions**\
 forge build
 
-# To run the unit tests (runs some unit tests on deployed contracts as well)
+**To run the unit tests**\
 COVERAGE="yes" NETWORK="sep" /Users/daniel/.foundry/bin/forge test -vv --rpc-url http://x.x.x.x:yyy
 
-# Technical Overview (Gitbook)
-https://tech.salty.io
+
 
 ---
 

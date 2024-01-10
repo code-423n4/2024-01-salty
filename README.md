@@ -128,7 +128,9 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 - Does it use a side-chain?:
 - Describe any specific areas you would like addressed:
 ```
+## Miscellaneous
 
+Employees of [SPONSOR NAME] and employees' family members are ineligible to participate in this audit.
 # Tests
 
 *Provide every step required to build the project from a fresh git clone, as well as steps to run the tests with a gas report.* 

@@ -5,7 +5,7 @@ https://tech.salty.io
 forge build
 
 **To run the unit tests**\
-COVERAGE="yes" NETWORK="sep" /Users/daniel/.foundry/bin/forge test -vv --rpc-url http://x.x.x.x:yyy
+COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url http://x.x.x.x:yyy
 
 
 

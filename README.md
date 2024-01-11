@@ -174,3 +174,7 @@ https://github.com/code-423n4/2024-01-salty/tree/main/lib
 - Does it use a side-chain?: no
 - Describe any specific areas you would like addressed: 
 ```
+
+## Miscellaneous
+
+Employees of Salty.IO and employees' family members are ineligible to participate in this audit.

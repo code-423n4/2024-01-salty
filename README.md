@@ -155,7 +155,8 @@ https://github.com/code-423n4/2024-01-salty/tree/main/lib
 * Precision issues which could result in transactions failing or the DEX entering an undesirable state.
 * Issues with performUpkeep in UpKeep.sol that would cause it to fail or enter an undesirable state.
 
-# Scoping Summary 
+# Scoping Summary
+```
 - If you have a public code repo, please share it here:  
 - How many contracts are in scope?:   35
 - Total SLoC for these contracts?:  2,538

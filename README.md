@@ -73,16 +73,16 @@ Automated findings output for the audit can be found [here](https://github.com/c
 
 _Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards._
 
-* Any issue from the ABDK audit labeled as "Info" will be considered ineligible. \
-* Fee on transfer tokens are not supported on the exchange. \
-* The mechanism by which ownership is relinquished after just one call is deliberate. \
-* Our choice not to validate contract addresses using methods like `isContract` was deliberate. \
-* Custom error messages have been intentionally excluded, regardless of their potential gas savings. \
-* The length of our revert strings is by design, and we are not interested in gas reductions that could be achieved by shortening them. \
-* The absence of checks for the zero address ('0x0') in the code is an intentional gas-saving measure. \
-* The level of logic inlining present in the code is as intended, and there is no interest in pursuing additional inlining for runtime gas savings. \
-* Our abstraction of logic is at the desired level, and we are not looking to decrease bytecode size further to save on deployment gas costs. \
-* We have consciously chosen readability over minor gas savings that might be achieved by using Yul. \
+* Any issue from the ABDK audit labeled as "Info" will be considered ineligible.
+* Fee on transfer tokens are not supported on the exchange.
+* The mechanism by which ownership is relinquished after just one call is deliberate.
+* Our choice not to validate contract addresses using methods like `isContract` was deliberate.
+* Custom error messages have been intentionally excluded, regardless of their potential gas savings.
+* The length of our revert strings is by design, and we are not interested in gas reductions that could be achieved by shortening them.
+* The absence of checks for the zero address ('0x0') in the code is an intentional gas-saving measure.
+* The level of logic inlining present in the code is as intended, and there is no interest in pursuing additional inlining for runtime gas savings.
+* Our abstraction of logic is at the desired level, and we are not looking to decrease bytecode size further to save on deployment gas costs.
+* We have consciously chosen readability over minor gas savings that might be achieved by using Yul.
 * Broadly, code alterations for minor gas optimizations that yield savings of less than 100 gas per operation are not under consideration. 
 
 # Scope
@@ -139,20 +139,20 @@ https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/tests \
 https://github.com/code-423n4/2024-01-salty/tree/main/lib
 
 # Additional Context
-* Bisection search used to optimize arbitrage in ArbitrageSearch.sol \
-* Algebra used in PoolMath.sol to perform liquidity zapping. \
-* Initial tokens whitelisted on the exchange will be WBTC, WETH and DAI as well as the native USDS and SALT tokens. \
-* Salty.IO will be deployed on the Ethereum blockchain. \
-* The only trusted role is the DAO.  There is no other ownership or priviledged role as the exchange is decentralized at launch. \
+* Bisection search used to optimize arbitrage in ArbitrageSearch.sol
+* Algebra used in PoolMath.sol to perform liquidity zapping.
+* Initial tokens whitelisted on the exchange will be WBTC, WETH and DAI as well as the native USDS and SALT tokens.
+* Salty.IO will be deployed on the Ethereum blockchain.
+* The only trusted role is the DAO.  There is no other ownership or priviledged role as the exchange is decentralized at launch.
 * DOS exceeding 15 minutes would be valid.
 
 # Attack ideas (Where to look for bugs)
-* Areas related to the incorrect loss or theft of tokens held by any account. \
-* Any issue that woudl prevent the accurate reporting of BTC and ETH price from the PriceAggregator. \
-* Issues that would prevent the correct functioning of rewards distribution. \
-* Any issue that would prevent the DAO from functioning correctly. \
-* Any issue related to the USDS stablecoin, collateral and the liquidation process. \
-* Precision issues which could result in transactions failing or the DEX entering an undesirable state. \
+* Areas related to the incorrect loss or theft of tokens held by any account.
+* Any issue that woudl prevent the accurate reporting of BTC and ETH price from the PriceAggregator.
+* Issues that would prevent the correct functioning of rewards distribution.
+* Any issue that would prevent the DAO from functioning correctly.
+* Any issue related to the USDS stablecoin, collateral and the liquidation process.
+* Precision issues which could result in transactions failing or the DEX entering an undesirable state.
 * Issues with performUpkeep in UpKeep.sol that would cause it to fail or enter an undesirable state.
 
 # Scoping Summary 

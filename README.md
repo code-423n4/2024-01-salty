@@ -148,7 +148,7 @@ https://github.com/code-423n4/2024-01-salty/tree/main/lib
 
 # Attack ideas (Where to look for bugs)
 * Areas related to the incorrect loss or theft of tokens held by any account.
-* Any issue that woudl prevent the accurate reporting of BTC and ETH price from the PriceAggregator.
+* Any issue that would prevent the accurate reporting of BTC and ETH price from the PriceAggregator.
 * Issues that would prevent the correct functioning of rewards distribution.
 * Any issue that would prevent the DAO from functioning correctly.
 * Any issue related to the USDS stablecoin, collateral and the liquidation process.

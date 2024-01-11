@@ -1,51 +1,71 @@
-**Technical Overview (Gitbook)**\
-https://tech.salty.io
+# Salty.IO audit details
+- Total Prize Pool: $60,500 USDC \
+  • HM awards: $41,250 USDC \
+  • Analysis awards: $2,500 USDC \
+  • QA awards: $1,250 USDC \
+  • Bot Race awards: $3,750 USDC \
+  • Gas awards: $1,250 USDC \
+  • Judge awards: $6,000 USDC \
+  • Lookout awards: $4,000 USDC \
+  • Scout awards: $500 USDC
+ 
+* Join [C4 Discord](https://discord.gg/code4rena) to register
+* Submit findings [using the C4 form](https://code4rena.com/contests/2024-01-salty/submit)
+* [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
+* Starts January 16, 2024 20:00 UTC 
+* Ends January 30, 2024 20:00 UTC 
 
-**Build Instructions**\
+# Overview
+Salty.IO is a Decentralized Exchange on Ethereum which uses Automatic Atomic Arbitrage (AAA) to generate yield and provide Zero Fees on all swaps.
+
+With AAA, market inefficiencies are arbitraged at swap time to create profits - which are then distributed to liquidity providers and stakers and used to form Protocol Owned Liquidity (POL) for the DAO.
+
+Additionally, Salty.IO provides USDS, an overcollateralized ERC20 stablecoin native to the protocol which uses WBTC/WETH LP as collateral.
+
+The exchange is 100% decentralized at launch - with all contracts, parameters, regional exclusions, whitelisting, and functionality controlled by the DAO itself.
+
+Futher details about the project can be found at https://docs.salty.io
+
+# Links
+- **Website:** https://salty.io
+- **Twitter:** https://x.com/salty_io
+- **Discord:** https://discord.gg/saltyio
+- **Previous Trail of Bits audit:** https://linkpending
+- **Previous ABDK audit:** https://linkpending
+
+
+# Technical Overview
+The Salty.IO codebase is divided up into the following folders:
+
+**/arbitrage** - handles searching for arbitrage opportunities at user swap time -  with the actual arbitrage swaps being done within Pools.sol itself.
+
+**/dao** - handles creating governance proposals, voting, acting on successful proposals and managing POL (Protocol Owned Liquidity). DAO adjustable parameters are stored in ~Config.sol contracts and are stored on a per folder basis.
+
+**/launch** - handles the initial airdrop, initial distribution, and bootstrapping ballot (a decentralized vote by the airdrop recipients to start up the DEX and distribute SALT).
+
+**/pools** - a core part of the exchange which handles liquidity pools, swaps, arbitrage, and user token deposits (which reduces gas costs for multiple trades) and pools contribution to recent arbitrage trades (for proportional rewards distribution).
+
+**/price_feed** - implements a redundant price aggregator (initially using Chainlink, Uniswap v3 TWAP and the Salty.IO reserves) to provide the BTC and ETH prices used by the overcollateralized stablecoin framework.
+
+**/rewards** - handles global SALT emissions, SALT rewards (which are sent to liquidity providers and stakers), and includes a rewards emitter mechanism (which emits a percentage of rewards over time to reduce rewards volatility).
+
+**/stable** - includes the USDS contract and collateral functionality which allows users to deposit WBTC/WETH LP as collateral, borrow USDS (which mints it when borrowed), repay USDS (which burns it) and allow users to liquidate undercollateralized positions.
+
+**/staking** - implements a staking rewards mechanism which handles users receiving rewards proportional to some "userShare".  What the userShare actually represents is dependent on the contract that derives from StakingRewards.sol (namely Staking.sol which handles users staking SALT, and CollateralAndLiquidity.sol which handles users depositing collateral and liquidity).
+
+**/** - includes the SALT token, the default AccessManager (which allows for DAO controlled geo-restriction) and the Upkeep contract (which contains a user callable performUpkeep() function that ensures proper functionality of ecosystem rewards, emissions, POL formation, etc).
+
+Futher technical details about each component can be found at https://tech.salty.io
+
+
+# Build / Test Instructions
 forge build
 
-**To run the unit tests**\
+**To run unit tests** \
 COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url http://x.x.x.x:yyy
 
 
-
----
-
-## ⭐️ Sponsor: Edit this `README.md` file
-
-- [ ] Modify the contents of this `README.md` file. Describe how your code is supposed to work with links to any relevent documentation and any other criteria/details that the C4 Wardens should keep in mind when reviewing. ([Here's a well-constructed example.](https://github.com/code-423n4/2022-08-foundation#readme))
-- [ ] Review the Gas award pool amount. This can be adjusted up or down, based on your preference - just flag it for Code4rena staff so we can update the pool totals across all comms channels.
-- [ ] Optional / nice to have: pre-record a high-level overview of your protocol (not just specific smart contract functions). This saves wardens a lot of time wading through documentation.
-- [ ] [This checklist in Notion](https://code4rena.notion.site/Key-info-for-Code4rena-sponsors-f60764c4c4574bbf8e7a6dbd72cc49b4#0cafa01e6201462e9f78677a39e09746) provides some best practices for Code4rena audits.
-
-## ⭐️ Sponsor: Final touches
-- [ ] Review and confirm the details in the section titled "Scoping details" and alert Code4rena staff of any changes.
-- [ ] Review and confirm the list of in-scope files in the `scope.txt` file in this directory.  Any files not listed as "in scope" will be considered out of scope for the purposes of judging, even if the file will be part of the deployed contracts.
-- [ ] Check that images and other files used in this README have been uploaded to the repo as a file and then linked in the README using absolute path (e.g. `https://github.com/code-423n4/yourrepo-url/filepath.png`)
-- [ ] Ensure that *all* links and image/file paths in this README use absolute paths, not relative paths
-- [ ] Check that all README information is in markdown format (HTML does not render on Code4rena.com)
-- [ ] Remove any part of this template that's not relevant to the final version of the README (e.g. instructions in brackets and italic)
-- [ ] Delete this checklist and all text above the line below when you're ready.
-
----
-
-# Salty.IO audit details
-- Total Prize Pool: $60,500 USDC 
-  - HM awards: $41,250 USDC 
-  - Analysis awards: $2,500 USDC 
-  - QA awards: $1,250 USDC 
-  - Bot Race awards: $3,750 USDC 
-  - Gas awards: $1,250 USDC 
-  - Judge awards: $6,000 USDC 
-  - Lookout awards: $4,000 USDC 
-  - Scout awards: $500 USDC 
-- Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/2024-01-saltyio/submit)
-- [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
-- Starts January 16, 2024 20:00 UTC 
-- Ends January 30, 2024 20:00 UTC 
-
-## Automated Findings / Publicly Known Issues
+# Automated Findings / Publicly Known Issues
 
 The 4naly3er report can be found [here](https://github.com/code-423n4/2024-01-salty/blob/main/4naly3er-report.md).
 
@@ -53,63 +73,89 @@ Automated findings output for the audit can be found [here](https://github.com/c
 
 _Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards._
 
-[ ⭐️ SPONSORS: Are there any known issues or risks deemed acceptable that shouldn't lead to a valid finding? If so, list them here. ]
-
-
-# Overview
-
-[ ⭐️ SPONSORS: add info here ]
-
-## Links
-
-- **Previous audits:** 
-- **Documentation:**
-- **Website:**
-- **Twitter:** 
-- **Discord:** 
-
+* Any issue from the ABDK audit labeled as "Info" will be considered ineligible. \
+* Fee on transfer tokens are not supported on the exchange. \
+* The mechanism by which ownership is relinquished after just one call is deliberate. \
+* Our choice not to validate contract addresses using methods like `isContract` was deliberate. \
+* Custom error messages have been intentionally excluded, regardless of their potential gas savings. \
+* The length of our revert strings is by design, and we are not interested in gas reductions that could be achieved by shortening them. \
+* The absence of checks for the zero address ('0x0') in the code is an intentional gas-saving measure. \
+* The level of logic inlining present in the code is as intended, and there is no interest in pursuing additional inlining for runtime gas savings. \
+* Our abstraction of logic is at the desired level, and we are not looking to decrease bytecode size further to save on deployment gas costs. \
+* We have consciously chosen readability over minor gas savings that might be achieved by using Yul. \
+* Broadly, code alterations for minor gas optimizations that yield savings of less than 100 gas per operation are not under consideration. 
 
 # Scope
+| Contract | SLOC | Libraries used |  
+| ----------- | ----------- | ----------- |
+| [ArbitrageSearch.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/arbitrage/ArbitrageSearch.sol) | 56 | - |
+| [DAO.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/DAO.sol) | 207 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [DAOConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/DAOConfig.sol) | 84 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Proposals.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/Proposals.sol) | 207 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Parameters.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/Parameters.sol) | 88 | - |
+| [Airdrop.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/Airdrop.sol) | 42 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [BootstrapBallot.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/BootstrapBallot.sol) | 40 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [InitialDistribution.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/InitialDistribution.sol) | 45 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [PoolUtils.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolUtils.sol) | 25 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [PoolsConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolsConfig.sol) | 66 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [PoolStats.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolStats.sol) | 61 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Pools.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/Pools.sol) | 176 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [PoolMath.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolMath.sol) | 100 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [CoreChainlinkFeed.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/CoreChainlinkFeed.sol) | 32 | [`@chainlink`](https://docs.chain.link/data-feeds/api-reference) |
+| [CoreUniswapFeed.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/CoreUniswapFeed.sol) | 67 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/), [`@uniswapv3-core`](https://docs.uniswap.org/sdk/v3/overview) |
+| [PriceAggregator.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/PriceAggregator.sol) | 95 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [CoreSaltyFeed.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/CoreSaltyFeed.sol) | 26 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [RewardsConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/RewardsConfig.sol) | 44 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Emissions.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/Emissions.sol) | 29 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [RewardsEmitter.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/RewardsEmitter.sol) | 67 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [SaltRewards.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/SaltRewards.sol) | 70 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [USDS.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/USDS.sol) | 23 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [StableConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/StableConfig.sol) | 66 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [CollateralAndLiquidity.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/CollateralAndLiquidity.sol) | 154 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Liquidizer.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/Liquidizer.sol) | 73 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [StakingConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/StakingConfig.sol) | 44 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Liquidity.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/Liquidity.sol) | 64 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [StakingRewards.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/StakingRewards.sol) | 125 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Staking.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/Staking.sol) | 89 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [ManagedWallet.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/ManagedWallet.sol) | 38 | - |
+| [AccessManager.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/AccessManager.sol) | 23 | - |
+| [Salt.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/Salt.sol) | 16 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [SigningTools.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/SigningTools.sol) | 14 | - |
+| [Upkeep.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/Upkeep.sol) | 134 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [ExchangeConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/ExchangeConfig.sol) | 48 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
 
-[ ⭐️ SPONSORS: add scoping and technical details here ]
-
-- [ ] In the table format shown below, provide the name of each contract and:
-  - [ ] source lines of code (excluding blank lines and comments) in each *For line of code counts, we recommend running prettier with a 100-character line length, and using [cloc](https://github.com/AlDanial/cloc).* 
-  - [ ] external contracts called in each
-  - [ ] libraries used in each
-
-*List all files in scope in the table below (along with hyperlinks) -- and feel free to add notes here to emphasize areas of focus.*
-
-| Contract | SLOC | Purpose | Libraries used |  
-| ----------- | ----------- | ----------- | ----------- |
-| [contracts/folder/sample.sol](https://github.com/code-423n4/repo-name/blob/contracts/folder/sample.sol) | 123 | This contract does XYZ | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-
-## Out of scope
-
-*List any files/contracts that are out of scope for this audit.*
+# Out of scope
+https://github.com/code-423n4/2024-01-salty/blob/main/src/arbitrage/tests \
+https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/tests \
+https://github.com/code-423n4/2024-01-salty/blob/main/src/dev \
+https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/tests \
+https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/tests \
+https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/tests \
+https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/tests \
+https://github.com/code-423n4/2024-01-salty/blob/main/src/root_tests \
+https://github.com/code-423n4/2024-01-salty/blob/main/src/scenario_tests \
+https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/tests \
+https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/tests \
+https://github.com/code-423n4/2024-01-salty/tree/main/lib
 
 # Additional Context
+* Bisection search used to optimize arbitrage in ArbitrageSearch.sol \
+* Algebra used in PoolMath.sol to perform liquidity zapping. \
+* Initial tokens whitelisted on the exchange will be WBTC, WETH and DAI as well as the native USDS and SALT tokens. \
+* Salty.IO will be deployed on the Ethereum blockchain. \
+* The only trusted role is the DAO.  There is no other ownership or priviledged role as the exchange is decentralized at launch. \
+* DOS exceeding 15 minutes would be valid.
 
-- [ ] Describe any novel or unique curve logic or mathematical models implemented in the contracts
-- [ ] Please list specific ERC20 that your protocol is anticipated to interact with. Could be "any" (literally anything, fee on transfer tokens, ERC777 tokens and so forth) or a list of tokens you envision using on launch.
-- [ ] Please list specific ERC721 that your protocol is anticipated to interact with.
-- [ ] Which blockchains will this code be deployed to, and are considered in scope for this audit?
-- [ ] Please list all trusted roles (e.g. operators, slashers, pausers, etc.), the privileges they hold, and any conditions under which privilege escalation is expected/allowable
-- [ ] In the event of a DOS, could you outline a minimum duration after which you would consider a finding to be valid? This question is asked in the context of most systems' capacity to handle DoS attacks gracefully for a certain period.
-- [ ] Is any part of your implementation intended to conform to any EIP's? If yes, please list the contracts in this format: 
-  - `Contract1`: Should comply with `ERC/EIPX`
-  - `Contract2`: Should comply with `ERC/EIPY`
+# Attack ideas (Where to look for bugs)
+* Areas related to the incorrect loss or theft of tokens held by any account. \
+* Any issue that woudl prevent the accurate reporting of BTC and ETH price from the PriceAggregator. \
+* Issues that would prevent the correct functioning of rewards distribution. \
+* Any issue that would prevent the DAO from functioning correctly. \
+* Any issue related to the USDS stablecoin, collateral and the liquidation process. \
+* Precision issues which could result in transactions failing or the DEX entering an undesirable state. \
+* Issues with performUpkeep in UpKeep.sol that would cause it to fail or enter an undesirable state.
 
-## Attack ideas (Where to look for bugs)
-*List specific areas to address - see [this blog post](https://medium.com/code4rena/the-security-council-elections-within-the-arbitrum-dao-a-comprehensive-guide-aa6d001aae60#9adb) for an example*
-
-## Main invariants
-*Describe the project's main invariants (properties that should NEVER EVER be broken).*
-
-## Scoping Details 
-[ ⭐️ SPONSORS: please confirm/edit the information below. ]
-
-```
+# Scoping Summary 
 - If you have a public code repo, please share it here:  
 - How many contracts are in scope?:   35
 - Total SLoC for these contracts?:  2,538
@@ -124,18 +170,7 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 - Please describe required context:   
 - Does it use an oracle?:  Chainlink
 - Describe any novel or unique curve logic or mathematical models your code uses: 
-- Is this either a fork of or an alternate implementation of another project?:   
-- Does it use a side-chain?:
-- Describe any specific areas you would like addressed:
+- Is this either a fork of or an alternate implementation of another project?: no
+- Does it use a side-chain?: no
+- Describe any specific areas you would like addressed: 
 ```
-
-# Tests
-
-*Provide every step required to build the project from a fresh git clone, as well as steps to run the tests with a gas report.* 
-
-*Note: Many wardens run Slither as a first pass for testing.  Please document any known errors with no workaround.* 
-
-
-## Miscellaneous
-
-Employees of Salty.IO and employees' family members are ineligible to participate in this audit.

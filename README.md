@@ -62,7 +62,7 @@ Futher technical details about each component can be found at https://tech.salty
 forge build
 
 **To run unit tests** \
-COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url http://x.x.x.x:yyy
+`COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url http://x.x.x.x:yyy`
 
 
 # Automated Findings / Publicly Known Issues

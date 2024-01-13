@@ -62,7 +62,7 @@ Futher technical details about each component can be found at https://tech.salty
 forge build
 
 **To run unit tests** \
-COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url http://x.x.x.x:yyy
+`COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url http://x.x.x.x:yyy`
 
 
 # Automated Findings / Publicly Known Issues
@@ -74,7 +74,7 @@ Automated findings output for the audit can be found [here](https://github.com/c
 _Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards._
 
 * Any issue from the ABDK audit labeled as "Info" will be considered ineligible.
-* Fee on transfer tokens are not supported on the exchange.
+* Fee on transfer tokens are not supported on the exchange.
 * The mechanism by which ownership is relinquished after just one call is deliberate.
 * Our choice not to validate contract addresses using methods like `isContract` was deliberate.
 * Custom error messages have been intentionally excluded, regardless of their potential gas savings.
@@ -125,18 +125,19 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 | [ExchangeConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/ExchangeConfig.sol) | 48 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
 
 # Out of scope
-https://github.com/code-423n4/2024-01-salty/blob/main/src/arbitrage/tests \
-https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/tests \
-https://github.com/code-423n4/2024-01-salty/blob/main/src/dev \
-https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/tests \
-https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/tests \
-https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/tests \
-https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/tests \
-https://github.com/code-423n4/2024-01-salty/blob/main/src/root_tests \
-https://github.com/code-423n4/2024-01-salty/blob/main/src/scenario_tests \
-https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/tests \
-https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/tests \
-https://github.com/code-423n4/2024-01-salty/tree/main/lib
+[src/arbitrage/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/arbitrage/tests )
+[src/dao/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/tests )
+[src/dev/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/dev )
+[src/launch/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/tests )
+[src/pools/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/tests )
+[src/price_feed/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/tests )
+[src/rewards/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/tests )
+[src/root_tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/root_tests )
+[src/scenario_tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/scenario_tests )
+[src/stable/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/tests )
+[src/staking/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/tests )
+[lib/*](https://github.com/code-423n4/2024-01-salty/blob/main/lib)
+
 
 # Additional Context
 * Bisection search used to optimize arbitrage in ArbitrageSearch.sol

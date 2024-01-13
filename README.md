@@ -144,7 +144,7 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 * Bisection search used to optimize arbitrage in ArbitrageSearch.sol
 * Algebra used in PoolMath.sol to perform liquidity zapping.
 * Initial tokens whitelisted on the exchange will be WBTC, WETH and DAI as well as the native USDS and SALT tokens.
-* Salty.IO will be deployed on the Ethereum blockchain.
+* Salty.IO will be deployed on Ethereum mainnet.
 * The only trusted role is the DAO.  There is no other ownership or priviledged role as the exchange is decentralized at launch.
 * DOS exceeding 15 minutes would be valid.
 

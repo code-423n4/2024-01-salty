@@ -62,7 +62,7 @@ Futher technical details about each component can be found at https://tech.salty
 forge build
 
 **To run unit tests** \
-Note - the RPC URL needs to be a Sepolia RPC \
+Note - the RPC URL needs to be a Sepolia RPC (e.g. https://rpc.sepolia.org) \
 `COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url http://x.x.x.x:yyy`
 
 
@@ -126,17 +126,17 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 | [ExchangeConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/ExchangeConfig.sol) | 48 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
 
 # Out of scope
-[src/arbitrage/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/arbitrage/tests )
-[src/dao/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/tests )
-[src/dev/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/dev )
-[src/launch/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/tests )
-[src/pools/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/tests )
-[src/price_feed/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/tests )
-[src/rewards/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/tests )
-[src/root_tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/root_tests )
-[src/scenario_tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/scenario_tests )
-[src/stable/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/tests )
-[src/staking/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/tests )
+[src/arbitrage/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/arbitrage/tests ) \
+[src/dao/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/tests ) \
+[src/dev/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/dev ) \
+[src/launch/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/tests ) \
+[src/pools/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/tests ) \
+[src/price_feed/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/tests ) \
+[src/rewards/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/tests ) \
+[src/root_tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/root_tests ) \
+[src/scenario_tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/scenario_tests ) \
+[src/stable/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/tests ) \
+[src/staking/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/tests ) \
 [lib/*](https://github.com/code-423n4/2024-01-salty/blob/main/lib)
 
 

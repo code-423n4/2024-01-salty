@@ -62,6 +62,7 @@ Futher technical details about each component can be found at https://tech.salty
 forge build
 
 **To run unit tests** \
+Note - the RPC URL needs to be a Sepolia RPC \
 `COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url http://x.x.x.x:yyy`
 
 

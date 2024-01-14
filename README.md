@@ -89,41 +89,41 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 # Scope
 | Contract | SLOC | Libraries used |  
 | ----------- | ----------- | ----------- |
-| [ArbitrageSearch.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/arbitrage/ArbitrageSearch.sol) | 56 | - |
-| [DAO.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/DAO.sol) | 207 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [DAOConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/DAOConfig.sol) | 84 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [Proposals.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/Proposals.sol) | 207 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [Parameters.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/Parameters.sol) | 88 | - |
-| [Airdrop.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/Airdrop.sol) | 42 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [BootstrapBallot.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/BootstrapBallot.sol) | 40 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [InitialDistribution.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/InitialDistribution.sol) | 45 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [PoolUtils.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolUtils.sol) | 25 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [PoolsConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolsConfig.sol) | 66 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [PoolStats.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolStats.sol) | 61 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [Pools.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/Pools.sol) | 176 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [PoolMath.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolMath.sol) | 100 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [CoreChainlinkFeed.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/CoreChainlinkFeed.sol) | 32 | [`@chainlink`](https://docs.chain.link/data-feeds/api-reference) |
-| [CoreUniswapFeed.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/CoreUniswapFeed.sol) | 67 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/), [`@uniswapv3-core`](https://docs.uniswap.org/sdk/v3/overview) |
-| [PriceAggregator.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/PriceAggregator.sol) | 95 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [CoreSaltyFeed.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/CoreSaltyFeed.sol) | 26 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [RewardsConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/RewardsConfig.sol) | 44 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [Emissions.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/Emissions.sol) | 29 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [RewardsEmitter.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/RewardsEmitter.sol) | 67 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [SaltRewards.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/SaltRewards.sol) | 70 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [USDS.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/USDS.sol) | 23 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [StableConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/StableConfig.sol) | 66 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [CollateralAndLiquidity.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/CollateralAndLiquidity.sol) | 154 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [Liquidizer.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/Liquidizer.sol) | 73 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [StakingConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/StakingConfig.sol) | 44 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [Liquidity.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/Liquidity.sol) | 64 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [StakingRewards.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/StakingRewards.sol) | 125 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [Staking.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/Staking.sol) | 89 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [ManagedWallet.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/ManagedWallet.sol) | 38 | - |
-| [AccessManager.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/AccessManager.sol) | 23 | - |
+| [ArbitrageSearch.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/arbitrage/ArbitrageSearch.sol) | 72 | - |
+| [DAO.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/DAO.sol) | 251 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [DAOConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/DAOConfig.sol) | 134 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Proposals.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/Proposals.sol) | 267 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Parameters.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/dao/Parameters.sol) | 93 | - |
+| [Airdrop.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/Airdrop.sol) | 56 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [BootstrapBallot.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/BootstrapBallot.sol) | 50 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [InitialDistribution.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/launch/InitialDistribution.sol) | 51 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [PoolUtils.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolUtils.sol) | 33 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [PoolsConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolsConfig.sol) | 96 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [PoolStats.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolStats.sol) | 89 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Pools.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/Pools.sol) | 229 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [PoolMath.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/pools/PoolMath.sol) | 69 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [CoreChainlinkFeed.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/CoreChainlinkFeed.sol) | 47 | [`@chainlink`](https://docs.chain.link/data-feeds/api-reference) |
+| [CoreUniswapFeed.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/CoreUniswapFeed.sol) | 87 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/), [`@uniswapv3-core`](https://docs.uniswap.org/sdk/v3/overview) |
+| [PriceAggregator.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/PriceAggregator.sol) | 133 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [CoreSaltyFeed.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/price_feed/CoreSaltyFeed.sol) | 34 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [RewardsConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/RewardsConfig.sol) | 70 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Emissions.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/Emissions.sol) | 35 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [RewardsEmitter.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/RewardsEmitter.sol) | 89 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [SaltRewards.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/rewards/SaltRewards.sol) | 88 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [USDS.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/USDS.sol) | 33 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [StableConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/StableConfig.sol) | 104 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [CollateralAndLiquidity.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/CollateralAndLiquidity.sol) | 190 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Liquidizer.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/Liquidizer.sol) | 93 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [StakingConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/StakingConfig.sol) | 70 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Liquidity.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/Liquidity.sol) | 85 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [StakingRewards.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/StakingRewards.sol) | 169 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [Staking.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/Staking.sol) | 117 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [ManagedWallet.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/ManagedWallet.sol) | 48 | - |
+| [AccessManager.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/AccessManager.sol) | 35 | - |
 | [Salt.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/Salt.sol) | 16 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [SigningTools.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/SigningTools.sol) | 14 | - |
-| [Upkeep.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/Upkeep.sol) | 134 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [ExchangeConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/ExchangeConfig.sol) | 48 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [SigningTools.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/SigningTools.sol) | 20 | - |
+| [Upkeep.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/Upkeep.sol) | 169 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [ExchangeConfig.sol](https://github.com/code-423n4/2024-01-salty/blob/main/src/ExchangeConfig.sol) | 58 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
 
 # Out of scope
 [src/arbitrage/tests/*](https://github.com/code-423n4/2024-01-salty/blob/main/src/arbitrage/tests ) \
@@ -161,7 +161,7 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 ```
 - If you have a public code repo, please share it here:  
 - How many contracts are in scope?:   35
-- Total SLoC for these contracts?:  2,538
+- Total SLoC for these contracts?:  3,288
 - How many external imports are there?: 58 
 - How many separate interfaces and struct definitions are there for the contracts within scope?:  29 interfaces , 8 structs
 - Does most of your code generally use composition or inheritance?:   Composition

@@ -22,7 +22,7 @@ With AAA, market inefficiencies are arbitraged at swap time to create profits - 
 
 Additionally, Salty.IO provides USDS, an overcollateralized ERC20 stablecoin native to the protocol which uses WBTC/WETH LP as collateral.
 
-The exchange is 100% decentralized at launch - with all contracts, parameters, regional exclusions, whitelisting, and functionality controlled by the DAO itself.
+The exchange is 100% decentralized at launch - with all parameters, regional exclusions, whitelisting, and contracts controlled by the DAO itself.
 
 Futher details about the project can be found at https://docs.salty.io
 

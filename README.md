@@ -27,11 +27,13 @@ The exchange is 100% decentralized at launch - with all parameters, regional exc
 Futher details about the project can be found at https://docs.salty.io
 
 # Links
-- **Website:** https://salty.io
-- **Twitter:** https://x.com/salty_io
-- **Discord:** https://discord.gg/saltyio
-- **Previous Trail of Bits audit:** https://linkpending
-- **Previous ABDK audit:** https://linkpending
+- [Documentation](https://docs.salty.io)
+- [Technical Overview](https://tech.salty.io)
+- [Video Technical Walkthrough](https://www.youtube.com/watch?v=bmAjm8J3q3Y)
+- [Previous ABDK audit](https://github.com/abdk-consulting/audits/tree/main/othernet_global_pte_ltd)
+- Previous Trail of Bits audit: Pending public release
+- [Twitter](https://x.com/salty_io)
+- [Discord](https://discord.gg/saltyio)
 
 
 # Technical Overview

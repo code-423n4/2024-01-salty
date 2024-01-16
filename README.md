@@ -1,12 +1,12 @@
 # Salty.IO audit details
-- Total Prize Pool: $60,500 USDC \
-  • HM awards: $41,250 USDC \
-  • Analysis awards: $2,500 USDC \
-  • QA awards: $1,250 USDC \
-  • Bot Race awards: $3,750 USDC \
-  • Gas awards: $1,250 USDC \
-  • Judge awards: $6,000 USDC \
-  • Lookout awards: $4,000 USDC \
+- Total Prize Pool: $80,000 USDC 
+  • HM awards: $54,615 USDC 
+  • Analysis awards: $3,310 USDC 
+  • QA awards: $1,655 USDC 
+  • Bot Race awards: $4,965 USDC 
+  • Gas awards: $1,655 USDC 
+  • Judge awards: $8,000 USDC 
+  • Lookout awards: $5,300 USDC 
   • Scout awards: $500 USDC
  
 * Join [C4 Discord](https://discord.gg/code4rena) to register

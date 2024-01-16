@@ -10,7 +10,7 @@
   • Scout awards: $500 USDC
  
 * Join [C4 Discord](https://discord.gg/code4rena) to register
-* Submit findings [using the C4 form](https://code4rena.com/contests/2024-01-salty/submit)
+* Submit findings [using the C4 form](https://code4rena.com/contests/2024-01-saltyio/submit)
 * [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 * Starts January 16, 2024 20:00 UTC 
 * Ends January 30, 2024 20:00 UTC 

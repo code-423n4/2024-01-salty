@@ -31,7 +31,7 @@ Futher details about the project can be found at https://docs.salty.io
 - [Technical Overview](https://tech.salty.io)
 - [Video Technical Walkthrough](https://www.youtube.com/watch?v=bmAjm8J3q3Y)
 - [Previous ABDK audit](https://github.com/abdk-consulting/audits/tree/main/othernet_global_pte_ltd)
-- Previous Trail of Bits audit: Pending public release
+- [Previous Trail of Bits audit](https://github.com/trailofbits/publications/blob/master/reviews/2023-10-saltyio-securityreview.pdf)
 - [Twitter](https://x.com/salty_io)
 - [Discord](https://discord.gg/saltyio)
 

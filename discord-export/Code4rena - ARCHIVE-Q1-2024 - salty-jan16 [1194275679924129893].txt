@@ -1,0 +1,3206 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q1-2024 / salty-jan16
+==============================================================
+
+[01/10/2024 16:20] kartoonjoy (pinned)
+👋 Hello and welcome to the audit channel for the $80,000 in USDC **Salty.IO** audit!
+
+📆 Audit opens 01/16/2024 20:00 (20:00 UTC) and runs through 01/30/2024 20:00 (20:00 UTC) (14 days).
+
+Please give a warm welcome to the Salty.IO team, particularly @Daniel Cota, who will be available for questions either here in the channel or via DM in the PT timezone(s).
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/audits/2024-01-saltyio#top
+
+{Embed}
+https://code4rena.com/audits/2024-01-saltyio
+Salty.IO | Code4rena
+$80,000 in USDC
+16 January 8:00 PM—30 January 8:00 PM
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/c4-og-banner-A082C.png
+
+{Reactions}
+🚀 (5) 😀 
+
+[01/10/2024 16:20] kartoonjoy
+Pinned a message.
+
+
+[01/11/2024 23:58] danielcota
+Hello everyone!  👋 Looking forward to the audit! 😀
+
+{Reactions}
+👋 (48) hi5 (5) 
+
+[01/15/2024 15:25] m4k2
+Hi, can we have a link to the protocol website or documentations ?
+
+
+[01/15/2024 15:54] stackachu
+https://docs.salty.io/
+
+{Embed}
+https://docs.salty.io/
+Welcome to Salty.IO
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/94oxTfKozXK9ARCn8HxT-40621.png
+
+
+[01/15/2024 20:07] danielcota
+Also, https://tech.salty.io
+
+{Embed}
+https://tech.salty.io/
+Salty.IO Overview
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/lKlpFOKp3ZAIdzIWdTSc-E5AF8.png
+
+
+[01/15/2024 20:38] tx.origin
+while we're at it,  video walkthrough of the technical docs:
+https://www.youtube.com/watch?v=bmAjm8J3q3Y
+
+{Embed}
+Daniel Cota
+https://www.youtube.com/watch?v=bmAjm8J3q3Y
+Salty.IO Technical Walkthrough with Daniel Cota (of Othernet Global)
+Salty.IO is a novel Ethereum DEX with built-in Automatic Arbitrage, a native WBTC/WETH backed stablecoin, and complete decentralization at launch.
+
+Github: https://github.com/othernet-global/salty-io
+Docs: https://docs.salty.io
+Twitter: https://x.com/salty_io
+Discord: https://discord.gg/saltyio
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/maxresdefault-6C6F8.jpg
+
+
+[01/15/2024 20:39] tx.origin
+@Daniel Cota got a question already is the ABDK audit public?
+
+
+[01/15/2024 21:22] danielcota
+Yes, https://github.com/abdk-consulting/audits/blob/main/othernet_global_pte_ltd/ABDK_OthernetGlobalPTELTD_SaltyIO_v_2_0.pdf
+
+{Embed}
+https://github.com/abdk-consulting/audits/blob/main/othernet_global_pte_ltd/ABDK_OthernetGlobalPTELTD_SaltyIO_v_2_0.pdf
+audits/othernet_global_pte_ltd/ABDK_OthernetGlobalPTELTD_SaltyIO_v_...
+Database of public audits made by ABDK Consulting. Contribute to abdk-consulting/audits development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/audits-17CA0
+
+{Reactions}
+👍 (2) 
+
+[01/15/2024 21:26] tx.origin
+Also noticed you wanted to do an audit with trail of bits. Is that one also already done and public?
+
+
+[01/15/2024 21:27] escrow1337
+Is this the exact same codebase that will be published on C4? I can see on rsvp that an extra 1k SLOC got added (this question also applies to the ToB audit). Thanks.
+
+
+[01/15/2024 21:30] danielcota
+The audit is finished, but they haven't released it publicly yet. Hopefully in the next day or two.  I'll post it here as soon as it is released.
+
+{Reactions}
+👍 
+
+[01/15/2024 21:31] danielcota
+Codebase is the same, yes.  There was some discrepancy in the SLOC counting mechanic.  The final SLOC is 3,288 and the prize pool has been updated to $80k.
+
+{Reactions}
+❤️ (2) 
+
+[01/16/2024 00:39] 0xhelium
+Would the findings then be considered known for this audit?
+
+
+[01/16/2024 00:40] 0xhelium
+Have you remediated to all issues already?
+
+
+[01/16/2024 00:48] danielcota
+The issues in the Trail of Bits audit were remediated already.  Any issues with the remediation would still be valid of course.
+
+
+[01/16/2024 01:44] danielcota
+For completeness the ABDK audit issues that were remediated are marked as Fixed in the audit while those that were not are marked as Info.  ABDK issues marked as Info are considered known for this audit.
+
+{Reactions}
+💯 (4) 
+
+[01/16/2024 15:39] inallhonesty_
+Is it just me or some of the `Major Issues` in the ABDK audit aren't that Major
+
+{Reactions}
+🤝 (4) 😂 (11) 
+
+[01/16/2024 15:41] stakog
+Yeah read it today and was thinking the same thing
+
+
+[01/16/2024 19:04] poeaudits
+Error in comment: Major issue 🚨
+
+{Reactions}
+🇼 (7) 🇹 (7) 🇫 (7) 😂 (3) 
+
+[01/16/2024 19:19] thebirdeye.eth
+What's the sloc for salty?
+
+
+[01/16/2024 19:23] 0xpranav
+3500
+
+
+[01/16/2024 20:02] C4 (pinned)
+**Automated Findings / Publicly Known Issues**
+
+Reminder: all [Automated Findings / Publicly Known Issues](https://github.com/code-423n4/2024-01-salty#automated-findings--publicly-known-issues) are out of scope and ineligible for awards.
+
+{Embed}
+https://github.com/code-423n4/2024-01-salty
+GitHub - code-423n4/2024-01-salty
+Contribute to code-423n4/2024-01-salty development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/c735717c-40bb-4e49-aa83-42e5dfa0846f-DE13A
+
+{Reactions}
+😍 (4) 🧨 (3) ❤️ (2) 💥 
+
+[01/16/2024 20:03] tx.origin
+**Employees of Salty.IO and employees' family members are ineligible to participate in this audit.**
+ lol
+
+{Reactions}
+✅ (5) 💀 (10) 
+
+[01/16/2024 20:04] knownfactc4_29311
+Yeah that's new boilerplate we've added in general.
+
+{Reactions}
+✅ 
+
+[01/16/2024 20:04] tx.origin
+yeah makes sense after the incident I just found it funny
+
+
+[01/16/2024 20:49] 0xsimeon
+hey @Daniel Cota  
+
+QQ: `Algebra used in PoolMath.sol`
+
+What algebra should I pick up to understand the maths used here?
+
+
+[01/16/2024 21:16] itsmetechjay
+Pinned a message.
+
+
+[01/16/2024 21:54] danielcota
+Just some basic algebra. The steps are laid out one by one in the comments.
+
+
+[01/16/2024 22:11] poeaudits
+I'm curious about "Custom error messages have been intentionally excluded, regardless of their potential gas savings." Could you share your reasoning?
+
+
+[01/16/2024 22:15] danielcota
+I’m more familiar with standard revert strings and didn’t want to refactor the entire project with custom error messages.
+
+
+[01/16/2024 22:16] poeaudits
+Having to flip the logic from positive to negative can be a pain. I get it.
+
+
+[01/16/2024 22:41] surfer_05
+Hey @Daniel Cota , there are a couple of tests failing due to `Reason: backend: failed while inspecting: Database error` . Any mitigation ?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-325FD.png
+
+
+[01/16/2024 22:44] danielcota
+Not sure. Maybe an issue with the RPC? Try a different Sepolia RPC server to run the tests.
+
+{Reactions}
+👍 
+
+[01/16/2024 22:48] surfer_05
+thanks, working fine with the alchemy RPC
+
+{Reactions}
+😀 
+
+[01/16/2024 23:06] mr_1x1
+I can Not run `forge build` Command so are there any dependencies?
+
+
+[01/16/2024 23:16] danielcota
+Make sure you are cloning the repo and not just downloading the source.
+
+
+[01/16/2024 23:27] mr_1x1
+yes sure `git clone https://github.com/code-423n4/2024-01-salty`
+
+
+[01/16/2024 23:31] danielcota
+Should work fine. The necessary dependencies are normally downloaded as needed. Try upgrading forge.
+
+
+[01/16/2024 23:34] mr_1x1
+okay Thanks
+
+
+[01/17/2024 01:25] mrosas
+Do we need sepolia's test tokens?
+
+
+[01/17/2024 01:29] danielcota
+For testing in Foundry?  You can just prank yourself as any address that already holds some.
+
+
+[01/17/2024 04:31] spacecake8961
+Love the project/code so far and pretty amazing ow far it came with limited resources 👍
+I am trying to deploy locally a similar setup as is intended for Salty to be deployed on mainnet eventually.
+I am trying to do that on a local fork of mainnet (using Anvil). I am looking for help around hoz the different parts are expected to be deployed. From my understanding of the code, I did these initia steps:
+1. Deploy SALT token
+2. Deploy Managed wallet
+3. Deploy USDS stablecoin
+4. Deploy ExchangeConfig
+
+I thought I get your input on this before I go deeper into deploying everything (arbitrage, pools, staking, DAO, etc.)
+
+{Reactions}
+😀 
+
+[01/17/2024 04:38] spacecake8961
+Wouups just found the file `src/dev/Deployment.sol`  which seems to answer my questions 😄
+
+{Reactions}
+😀 (2) 
+
+[01/17/2024 04:55] fktworld
+What command did you use to test?
+
+
+[01/17/2024 04:57] spacecake8961
+All tests ran fine with the command: `COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url  https://rpc.sepolia.org`
+
+
+[01/17/2024 05:00] fktworld
+error
+
+
+[01/17/2024 05:03] fktworld
+What command did you use to run the forge test?
+
+
+[01/17/2024 05:06] poeaudits
+Is the grantAccess function in the AccessManager only needed for the airdrop/bootstrapBallot logic? Can any address interact with the pools without needing approval of some kind?
+
+
+[01/17/2024 06:03] stryder1496
+I am getting this error while running the tests , this is the script i am running "COVERAGE="yes" NETWORK="sep" forge test  --rpc-url https://rpc.sepolia.org"
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-6E21D.png
+
+
+[01/17/2024 06:06] fktworld
+@Daniel Cota  How to run the test? Take an example,Thank you
+
+
+[01/17/2024 06:18] danielcota
+Access is also needed to for staking SALT, depositing liquidity, depositing WBTC/WETH collateral and borrowing USDS.
+
+
+[01/17/2024 06:18] danielcota
+Try another RPC
+
+
+[01/17/2024 06:19] danielcota
+The command mention in the GitHub generally works well: COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url "https://rpc.sepolia.org"
+
+{Reactions}
+👍 (2) 
+
+[01/17/2024 06:23] fktworld
+COVERAGE=yes : The term 'COVERAGE=yes' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of 
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url https://sepolia ...
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (COVERAGE=yes:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+[01/17/2024 06:24] fktworld
+Unable to execute command
+
+
+[01/17/2024 06:28] mussucal
+Try including COVERAGE="yes" NETWORK="sep" in a .env file. Keep --rpc-url in command line.
+
+
+[01/17/2024 06:30] fktworld
+Can you take a screenshot? I can‘t run this test command, thank you.
+
+
+[01/17/2024 06:31] danielcota
+Which operating system are you using?
+
+
+[01/17/2024 06:32] mussucal
+.env
+COVERAGE="yes"
+NETWORK="sep"
+
+{Reactions}
+👍 ✅ 
+
+[01/17/2024 06:32] mussucal
+command line forge test -vv --rpc-url https://sepolia.infura.io/v3/XXXXXXXX
+
+
+[01/17/2024 06:32] fktworld
+windows
+
+
+[01/17/2024 06:33] danielcota
+Powershell?
+
+
+[01/17/2024 06:33] fktworld
+yes
+
+
+[01/17/2024 06:33] fktworld
+yes
+
+
+[01/17/2024 06:33] danielcota
+I don't know anything about Powershell, but I found this page which might help you set the environment variables:  https://petri.com/powershell-set-environment-variable/
+
+{Embed}
+Sukesh Mudrakola
+https://petri.com/powershell-set-environment-variable/
+How To Set Environment Variables with PowerShell | Petri
+Environment variables allow you to access command line tools and control the execution of programs on Windows. In this article, we’ll explain how environment variables work and the different ways to set an environment variable with PowerShell.
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/Powershell_01-DEF0E.jpg
+
+
+[01/17/2024 06:34] danielcota
+You'll need to set COVERAGE and NETWORK
+
+
+[01/17/2024 06:36] fktworld
+Can you take a screenshot? Which document? Thank you🙏
+
+
+[01/17/2024 06:37] danielcota
+Try this:
+
+
+[01/17/2024 06:37] danielcota
+$env:COVERAGE = "yes"; $env:NETWORK = "sep"; forge test --rpc-url "https://rpc.sepolia.org/"
+
+{Reactions}
+👍 (4) 🙏 (2) ✅ (2) 
+
+[01/17/2024 06:40] fktworld
+I‘m trying, thank you.
+
+{Reactions}
+👍 
+
+[01/17/2024 06:41] danielcota
+No guarantees.  That's just what GPT4 suggested. 😄
+
+{Reactions}
+chefskiss 
+
+[01/17/2024 06:41] fktworld
+yes yes！
+
+{Reactions}
+🥳 🤖 
+
+[01/17/2024 06:43] fktworld
+Windows 🙂
+
+
+[01/17/2024 06:43] spacecake8961
+Question about the `src/dev/Deployment.sol` file: How is it supposed to be ran?
+I thought it was a FOundry Script so I ran the `initializeContracts` function as follows:
+`forge script src/dev/Deployment.sol --rpc-url http://127.0.0.1:8545 --sig "initializeContracts()" -vvvv`
+Not sure it is deploying the contracts on my local Anvil blockchain 🤔
+
+
+[01/17/2024 06:45] danielcota
+Deployment.sol is really just there for the unit tests.  If COVERAGE="no" the deployed contracts that are derived from this line are tested:
+
+{Reactions}
+✅ 
+
+[01/17/2024 06:45] danielcota
+// The DAO contract can provide us with all other contract addresses in the protocol
+    IDAO public dao = IDAO(address(0x112223db8E32d056170da32FD3Dba90adCa50159));
+
+
+[01/17/2024 06:46] danielcota
+COVERAGE=yes mostly unit tests using newly instantiated contracts so that the coverage works properly in Foundry - not the deployed ones.
+
+
+[01/17/2024 06:49] danielcota
+@spacecake8961 The Deployment.initializeContracts() function shows the order in which contracts are initialized - if you wanted to create a new deployment.
+
+
+[01/17/2024 06:50] spacecake8961
+yeah feel like I can use it to build a deployment script 👌
+
+{Reactions}
+👍 
+
+[01/17/2024 06:58] daniel526
+@Daniel Cota Kindly check DM
+
+
+[01/17/2024 07:07] coffiasd
+:10_10:
+
+
+[01/17/2024 07:11] daniel526
+ok ✅
+
+
+[01/17/2024 07:34] 0xdemonnn
+Someone got this problem too? i run it on wsl
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-AFAF4.png
+
+
+[01/17/2024 07:51] 0xsorrynotsorry
+If you try to compile in VSCode's built-in terminal, don't do it.
+Use a seperate terminal of the system to avoid other programs sucking the memory.
+
+{Reactions}
+hi5 (3) 
+
+[01/17/2024 07:59] 0xdemonnn
+Thanks, it works! i think, i should win the contest to upgrade the pc lol 😂
+
+{Reactions}
+hi5 (2) 
+
+[01/17/2024 08:04] 0xsorrynotsorry
+Go for it ser 🫡
+
+{Reactions}
+🔥 (2) 
+
+[01/17/2024 09:24] angry_mustache_man
+Anybody got this error?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/saltyio_error1-B2C75.png
+
+
+[01/17/2024 09:52] anirruth
+https://github.com/foundry-rs/foundry/issues/4933 Try adding the solc version manually in foundry.toml as mentioned in the issue
+
+{Reactions}
+👍 (2) 
+
+[01/17/2024 10:21] aodkgkrogrogoovg2o3btivr
+So    ``USDS   / SALT   / WETH   / WBTC   /  DAI  ``  are the only ERC20  tokens used    ( for this audit  )
+
+
+[01/17/2024 10:24] aodkgkrogrogoovg2o3btivr
+the arguments for   `` ManagedWallet  ``  constructor()  who are exactly ?
+
+
+[01/17/2024 10:26] danielcota
+Yes, those are the initial tokens.   The ManagedWallet is responsible for specifying the initialTeamWallet address.
+
+
+[01/17/2024 10:52] aodkgkrogrogoovg2o3btivr
+I see some privileged functions with onlyOwner on some contracts that says in comments that are executed at the deployment only once  (    ExchangeConfig::setContracts()   for example ), the DAO is the owner as i see too in another comment, so the DAO will execute them after the deployment or how exactly ? DAO will not make changes only after  the   proposal of changes ?
+
+
+[01/17/2024 11:00] danielcota
+Proposals are made via the Proposals.sol contract, are voted on and DAO.finalizeBallot(uint256 ballotID) is called to execute them - assuming that the votes are favorable and the voting period has passed.
+
+
+[01/17/2024 11:03] aodkgkrogrogoovg2o3btivr
+if you mentioned this, a ballot is a proposal ( someone who wants to make a modification and others can vote )  but its named a ballot for some reasons ?
+
+
+[01/17/2024 11:04] danielcota
+A proposal is a ballot that is voted on.
+
+{Reactions}
+👍 
+
+[01/17/2024 11:05] aodkgkrogrogoovg2o3btivr
+But what I wanted to ask is who is the ``onlyOwner``  of the ~Config  files ?   Because i see in the comments that   ``onlyOwner`` is the  DAO  but some of these  ``onlyOwner`` privileged functions says are executed at deployment but the DAO doesnt deploy those contracts to become the ``owner`` from ``onlyOwner``
+
+
+[01/17/2024 11:06] danielcota
+At deployment time the Deployer transfers them all to the DAO contract.
+
+
+[01/17/2024 11:06] aodkgkrogrogoovg2o3btivr
+Thats the answer I needed , thanks
+
+{Reactions}
+👍 (2) 
+
+[01/17/2024 11:33] Message Wolf#0225 (pinned)
+**Automated Findings / Publicly Known Issues**
+
+Automated findings output for the audit can be found [here](https://github.com/code-423n4/2024-01-salty/blob/main/bot-report.md).
+
+*Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
+
+
+[01/17/2024 11:37] haxatron1
+M-04 😮‍💨😮‍💨😮‍💨😡😡😡
+
+
+[01/17/2024 11:38] 0xsorrynotsorry
+Pinned a message.
+
+
+[01/17/2024 14:33] Deleted User
+why when I install openzeppelin-contracts with `forge install https://github.com/openzeppelin/openzeppelin-contracts@v5.0.1 --no-commit` , for example the security folder in contracts/ is not there
+
+
+[01/17/2024 14:34] Deleted User
+some files missing
+
+
+[01/17/2024 14:37] 0xshaheen
+Wondering why you are doing that 🤔
+
+
+[01/17/2024 14:38] 0xshaheen
+`forge build` always install all the dependencies for me. I think you should try that too. It works like a charm
+
+
+[01/17/2024 14:39] Deleted User
+lol
+
+
+[01/17/2024 14:39] Deleted User
+thanks
+
+{Reactions}
+👍 
+
+[01/17/2024 14:39] Deleted User
+I started doing it manually
+
+
+[01/17/2024 14:40] 0xshaheen
+I never did that. forge build does all the work
+
+
+[01/17/2024 14:41] 0xphi
+try:
+```
+git clone https://github.com/code-423n4/2024-01-salty 
+COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url  https://rpc.sepolia.org
+```
+foundry will automatically install the dependencies for ya.
+
+
+[01/17/2024 14:41] Deleted User
+Im okay
+
+
+[01/17/2024 15:54] senyab
+Initial liquidity of the bootstrap Ballot? 8 million SALT? Who eligible to receive it, the people who hold the xSalt tokens and provide liquidity(but how they can do  before the exchange is even launched.) or who can simply cast the vote in the Bootstrap Ballot. ? Don't understand it. 
+
+`The initial bootstrapping rewards of 8 million SALT (for liquidity providers and xSALT holders) will be distributed at the default rate of 1% per day (initially 80k per day).`
+
+
+[01/17/2024 16:40] klau5_
+Check InitialDistribution.sol and Deloyment.sol
+
+
+[01/17/2024 17:11] cholakovv
+have anyone encountered this error when running forge test?
+`
+failed to resolve file: "C:/Users/Simeon/OneDrive - Software University (SoftUni)/Desktop/Code4Arena/Salty/2024-01-salty/lib/v3-core/contracts\interfaces/IUniswapV3Pool.sol": The system cannot find the path specified. (os error 3); check configured remappings.
+    --> "C:/Users/Simeon/OneDrive - Software University (SoftUni)/Desktop/Code4Arena/Salty/2024-01-salty/src\\price_feed\\CoreUniswapFeed.sol"
+        "v3-core/interfaces/IUniswapV3Pool.sol"`
+
+
+[01/17/2024 17:22] faithxia
+The remapped paths are formatted for Linux, so they won't work on Windows
+
+
+[01/17/2024 17:22] faithxia
+you can use WSL2 or a VM, that will work
+
+
+[01/17/2024 17:22] faithxia
+or just fix the remappings manually
+
+
+[01/17/2024 17:23] faithxia
+actually it also may be because of the spaces in "OneDrive - Software University (SoftUni)"
+
+
+[01/17/2024 17:35] cholakovv
+thanks! will try
+
+
+[01/17/2024 19:08] 0xsimeon
+Hey guys, what repo are we cloning?
+
+
+[01/17/2024 19:08] 0xsimeon
+we have same name
+
+
+[01/17/2024 19:09] cholakovv
+yeah haha
+
+
+[01/17/2024 19:09] 0xsimeon
+got it.
+
+
+[01/17/2024 19:09] cholakovv
+https://github.com/code-423n4/2024-01-salty
+
+{Embed}
+https://github.com/code-423n4/2024-01-salty
+GitHub - code-423n4/2024-01-salty
+Contribute to code-423n4/2024-01-salty development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/c735717c-40bb-4e49-aa83-42e5dfa0846f-DE13A
+
+
+[01/17/2024 19:09] 0xsimeon
+Thanks brother
+
+{Reactions}
+🫡 
+
+[01/17/2024 21:07] danielcota
+Some clarification on virtualRewards in StakingRewards.sol
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-9CAB5.png
+
+
+[01/17/2024 22:05] danielcota
+Trail of Bits audit publicized: https://github.com/trailofbits/publications/blob/master/reviews/2023-10-saltyio-securityreview.pdf
+
+{Embed}
+https://github.com/trailofbits/publications/blob/master/reviews/2023-10-saltyio-securityreview.pdf
+publications/reviews/2023-10-saltyio-securityreview.pdf at master ·...
+Publications from Trail of Bits. Contribute to trailofbits/publications development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/publications-65459
+
+{Reactions}
+nice 
+
+[01/17/2024 23:05] inallhonesty_
+And these issues were already fixed right?
+
+
+[01/17/2024 23:10] danielcota
+Yes.
+
+
+[01/18/2024 03:21] chaduke3730
+I tried to deploy SaltRewards contract as follows but I am not sure if I deployed stakingRewardsEmitter, liquidityRewardsEmitter correctly, particuarly the last paramter with true/false part: 
+```javascript
+staking = new Staking(exchangeConfig, poolsConfig, stakingConfig);
+        collateralAndLiquidity = new CollateralAndLiquidity(pools, exchangeConfig, poolsConfig, stakingConfig, stableConfig, priceAggregator, liquidizer); 
+        stakingRewardsEmitter = new RewardsEmitter(staking, exchangeConfig, poolsConfig, rewardsConfig, true);
+        collateralAndLiquidity = new CollateralAndLiquidity(pools, exchangeConfig, poolsConfig, stakingConfig, stableConfig, priceAggregator, liquidizer); 
+        liquidityRewardsEmitter = new RewardsEmitter(collateralAndLiquidity, exchangeConfig, poolsConfig, rewardsConfig, false);
+        saltRewards = new SaltRewards(stakingRewardsEmitter, liquidityRewardsEmitter, exchangeConfig, rewardsConfig);
+```
+
+
+[01/18/2024 04:19] danielcota
+You'll want to reverse the true / false on two RewardsEmitter constructors.
+
+
+[01/18/2024 04:31] poeaudits
+Is it just me or are the L,G,N tags on bot submissions getting lower quality higher quantity?
+
+
+[01/18/2024 05:24] 0xhelium
+Agree
+
+
+[01/18/2024 07:31] bbl4de.xyz
+Doesn't surprise me as they did the audit after Trail Of Bits looking at the dates in pdfs
+
+
+[01/18/2024 07:50] tx.origin
+well that still doesn't explain why they are flaggin them as **major**
+
+
+[01/18/2024 07:50] bbl4de.xyz
+True 😆
+
+
+[01/18/2024 10:04] ubl4nk
+@Daniel Cota Who is the owner of PriceAggregator ? an EOA, Governance or something else ?
+
+
+[01/18/2024 10:28] danielcota
+The DAO contract
+
+{Reactions}
+👍 
+
+[01/18/2024 10:56] _polex
+Hey @Daniel Cota can we dm you or should we ask questions with private threads?
+
+
+[01/18/2024 10:57] danielcota
+Either works well.
+
+{Reactions}
+👍🏽 
+
+[01/18/2024 11:37] aodkgkrogrogoovg2o3btivr
+What is the most efficient way to figure out the correct / intended  way of functions execution  ?    ( This is a question any auditor or @Daniel Cota  can help me )
+
+
+[01/18/2024 11:38] danielcota
+If something is unclear you can try looking for tests that test a function in question and see what they are expecting to happen.
+
+
+[01/18/2024 11:46] _givn
+How is the USDS stablecoin related to the DEX? What's the purpose of having it?
+
+
+[01/18/2024 11:54] danielcota
+To encourage the formation of core WBTC/WETH liquidity (as collateral) and provide a decentralized stablecoin with 100% onchain verifiable collateral.
+
+{Reactions}
+👍 
+
+[01/18/2024 13:07] c0pp3rscr3w3r
+The codebase looks so beautiful 🫡:10_10: 🥂
+
+{Reactions}
+😀 (3) 👍 (2) 
+
+[01/18/2024 13:07] 0xprinc
+what is the meaning of `zapping`
+
+
+[01/18/2024 13:07] danielcota
+That's how I feel! 😄
+
+
+[01/18/2024 13:09] danielcota
+Zapping means adding liquidity to the pool where the ratios of tokens being added are not the same as the ratio of the tokens in the pool.  Normally the ratios have to be the same, but zapping allows the ratios to be arbitrary.
+
+
+[01/18/2024 13:09] thekmj
+:thonk: the arb algorithm is interesting, have you considered going for golden section search
+
+
+[01/18/2024 13:12] 0xprinc
+i think that there occurs the arbitrage opportunity due to zapping. And then the arbitrage happens itself inside the protocol..
+
+
+[01/18/2024 13:13] danielcota
+Golden section search could be interesting.  At this point I don't think I'll modify the arbitrage search as it's already been through a couple audits and heavily tested, but I may experiment with the golden section variation for fun and see what happens.
+
+
+[01/18/2024 13:14] danielcota
+Arbitrage is a possibility with zapping as zapping automatically performs a swap to give the added tokens the correct ratio - and all swaps on the DEX are checked for arbitrage opportunities.
+
+
+[01/18/2024 13:23] t0x1c.c0de
+Upon making any changes in the `.sol` files, it currently takes a huge amount of time to compile and run a test. Any ideas anybody to make it faster?
+
+
+[01/18/2024 13:28] danielcota
+Running a local Sepolia node makes testing super fast - less than one second.
+
+{Reactions}
+❤️ 👍🏻 
+
+[01/18/2024 14:33] tayzver
+@Daniel Cota sent a DM
+
+
+[01/18/2024 15:25] bbl4de.xyz
+Regarding this heavy testing, out of curiosity, was there a process of formal verification for this Arbitrage search contract?
+
+
+[01/18/2024 15:29] santiellena
+@Daniel Cota sent a DM!
+
+
+[01/18/2024 15:43] sil3th
+@Daniel Cota  check private thread
+
+
+[01/18/2024 16:46] gladita
+what cmd should i run to deploy this? I'm not seeing a script to deploy... do i need to write my own?
+
+
+[01/18/2024 18:13] aodkgkrogrogoovg2o3btivr
+``  COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url http://x.x.x.x:yyy  ``   is in the code4rena contests page, you need sepolia rpc url instead of ``http://x.x.x.x:yyy ``
+
+
+[01/18/2024 18:14] aodkgkrogrogoovg2o3btivr
+So the signatures used  in the BootstrapBallot :: vote() are created  off-chain for the addresses / users  that  shared the launch announcement and are in a valid country ?
+
+
+[01/18/2024 20:30] danielcota
+Formal verification has not been done.  Just a lot of simulation.
+
+
+[01/18/2024 20:42] 0xpranav
+@Daniel Cota Can i dm ?
+
+
+[01/18/2024 20:42] danielcota
+Yes
+
+
+[01/18/2024 20:45] 0xpranav
+sent you request
+
+
+[01/19/2024 00:34] gladita
+thanks I'll give that a try
+
+
+[01/19/2024 03:10] poeaudits
+I am trying to setup my own deployment by copying the steps/code in comprehensive1.t.sol, but I can't seem to get the InitialDistribution contract to start with the required salt:
+
+```
+Error: The InitialDistribution contract should start with a SALT balance of 100 million SALT
+  Error: a == b not satisfied [uint]
+        Left: 0
+       Right: 100000000000000000000000000
+```
+It seems this step should happen when finalizeBallot() is called in the BootstrapBallot.sol contract. Is there a step I may be missing?
+
+
+[01/19/2024 03:23] guy_in0xnito
+@Daniel Cota sir dm ed you
+
+
+[01/19/2024 03:40] danielcota
+You have to manually transfer the initial SALT supply to the InitialDistribution contract.
+
+
+[01/19/2024 05:31] 0xauditism
+So when providing liquidity and not use zapping, we should provide the same amount of token A and B ?
+
+
+[01/19/2024 05:35] danielcota
+You provide the same ratio of A/B that currently exist in the reserves themselves.
+
+{Reactions}
+thankyou 
+
+[01/19/2024 05:55] poeaudits
+I didn't see much of a change when running off an anvil forked spolia network.
+
+
+[01/19/2024 05:56] danielcota
+I haven't tried that.  I ran an actual Geth Sepolia node for testing and it was very fast.
+
+
+[01/19/2024 06:09] mgf15
+got this error ```The application panicked (crashed).
+Message:  byte index 4 is out of bounds of `L()`
+Location: crates/evm/src/decode.rs:193
+
+This is a bug. Consider reporting it at https://github.com/foundry-rs/foundry
+
+Backtrace omitted. Run with RUST_BACKTRACE=1 environment variable to display it.
+Run with RUST_BACKTRACE=full to include source snippets.
+Aborted (core dumped)
+```
+
+
+[01/19/2024 06:09] mgf15
+when run `COVERAGE="yes" NETWORK="sep" forge test --rpc-url https://rpc.sepolia.org/`
+
+
+[01/19/2024 07:06] mgf15
+fixed by update foundry
+
+
+[01/19/2024 07:31] anmol.eth
+How we are supposed to add liquidity to AMM for pools other than WBTC/WETH
+
+
+[01/19/2024 07:39] danielcota
+Use Liquidity.depositLiquidityAndIncreaseShare().  CollateralAndLiquidity derives from Liquidity.
+
+{Reactions}
+✅ 
+
+[01/19/2024 09:48] donkicha
+Hello!
+
+Hope you are well!
+
+Does someone have problem with running Slither?
+
+
+[01/19/2024 09:48] donkicha
+For me it stays like that for hours
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/Screenshot_402-37BBC.png
+
+
+[01/19/2024 09:48] donkicha
+Thank you in advance!
+
+
+[01/19/2024 11:26] bengyles
+it took me quite a while as well, on a pretty fast computer but eventually the output showed up. Gotta give it some time I guess
+
+{Reactions}
+❤️ 
+
+[01/19/2024 11:42] dimitar.mitev
+Hi,
+User can have only 1 active proposal, can not open more than 1 proposals, right?
+
+
+[01/19/2024 11:46] danielcota
+Yes, each user can only have one open proposal.
+
+{Reactions}
+✅ 
+
+[01/19/2024 11:50] olanre_waju
+pls, test is not running
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-2E365.png
+
+
+[01/19/2024 12:12] ra7946
+yes
+
+{Reactions}
+✅ 
+
+[01/19/2024 13:19] souilos
+Hi @Daniel Cota, 
+
+"A default 45% of the SALT rewards received from this POL are burned". 
+I am just wondering why 45% ? 🙂
+
+
+[01/19/2024 13:28] danielcota
+Seemed like a reasonable starting point. The DAO can adjust the percent between 23% and 68%.
+
+{Reactions}
+👍🏻 
+
+[01/19/2024 14:34] eittah
+gm:hi5:
+
+
+[01/19/2024 14:52] 0xsilvermist
+I ran forge build and got this error, does anyone know how to fix it
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-CAE56.png
+
+
+[01/19/2024 15:11] anirruth
+Try adding solc = "0.8.22" in foundry.toml
+
+
+[01/19/2024 15:15] 0xstriker
+the contract DAO uses IERC20, ISalt, IUSDS but doesn't import them and the contracts that it inherit from also doesn't inherit them so how are these used in the contract
+
+
+[01/19/2024 15:17] jacobmartin0406
+Please check IDAO, you can find the imports there.
+
+{Reactions}
+👍 
+
+[01/19/2024 15:23] 0xstriker
+when a contract inherits from another contract it only inherits its functions, events and state variables it doesn't inherit the imported files, and the IERC20 is also not in the IDAO interface. or am I wrong
+
+
+[01/19/2024 15:44] _polex
+Yes it does
+
+{Reactions}
+👍 
+
+[01/19/2024 15:50] mylifechangefast.eth_70767
+lol where do I start from
+
+
+[01/19/2024 16:19] devpelz
+please i'm trying to run forge b on this repo ansd iv'e been having isuues, can anyone help out
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/Screenshot_from_2024-01-19_17-18-43-DBD98.png
+
+
+[01/19/2024 16:25] devpelz
+this is where i'm at now, i need help please @here
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/Screenshot_from_2024-01-19_17-25-04-2211C.png
+
+
+[01/19/2024 16:53] jacobmartin0406
+What does `ICalledContract.callFromDAO` function do?
+
+
+[01/19/2024 17:35] ra7946
+The contract at this ballot.address1 executes callFromDAO function that is implemented correctly in the contract.
+
+
+[01/19/2024 19:18] audinarey
+run it directly in your PC's terminal
+
+{Reactions}
+💜 
+
+[01/19/2024 19:20] audinarey
+@lanrebayode77 this is what worked for me
+
+{Reactions}
+hi5 snooze 🫡 
+
+[01/19/2024 19:49] mylifechangefast.eth_70767
+same here!
+
+My pc terminal you mean?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-9AFF7.png
+
+
+[01/19/2024 19:50] danielcota
+It has arbitrary functionality defined by contracts that implement it.
+
+{Reactions}
+🫡 (2) 
+
+[01/19/2024 20:02] audinarey
+yes, dont use the VS code terminal
+
+
+[01/19/2024 20:21] mylifechangefast.eth_70767
+okay
+
+
+[01/20/2024 02:19] felipenovaesrocha
+mine build normally but testing failing
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-E18C4.png
+
+
+[01/20/2024 02:21] felipenovaesrocha
+nvm, found the issue, need run the cmd from the README
+
+
+[01/20/2024 06:00] cong.zhang
+Hi guys, is there somewhere I can track the status/progress of my submitted findings?
+
+
+[01/20/2024 06:14] fktworld
+finding
+
+
+[01/20/2024 07:12] cholakovv
+on which chains will the smart contracts be deployed?
+
+
+[01/20/2024 07:31] fktworld
+Ethereum main chain
+
+
+[01/20/2024 07:32] cholakovv
+thanks
+
+
+[01/20/2024 08:21] mylifechangefast.eth_70767
+is the liquidity added to the ERC20/ERC20 pair?
+
+and is there any involvement of WETH when adding liquidity?
+
+@Daniel Cota
+
+
+[01/20/2024 08:27] danielcota
+Liquidity is added for pairs of ERC20 tokens, yes.  WETH is involved only if it is one of the tokens referenced in a specific pool.
+
+
+[01/20/2024 08:28] mylifechangefast.eth_70767
+Oh okay.. creating a private thread.
+
+Wanna ask you more one thing
+
+
+[01/20/2024 08:51] umar_23269
+is fuzz test suit avaiable??
+
+
+[01/20/2024 11:58] aripse
+No, it doesn’t.
+
+
+[01/20/2024 11:58] aripse
+There is no connection to heritage here. What's happening is that when you `import` a file, it also brings in all the files that have already been imported in the parent file. Think of `import` as copying all the code from that file. So, when you `import` a file that itself contains `import` statements, it is equivalent to the following:
+
+File0:
+```
+code_file0
+```
+
+File1:
+```
+import file0
+code_file1
+```
+
+File2:
+```
+import file1
+code_file2
+```
+
+After compilation, File2 becomes:
+```
+code_file0
+code_file1
+code_file2
+```
+
+
+[01/20/2024 12:03] aripse
+That’s also why it is really important to use the syntax `import {Contract} from` : 
+- to don’t waste time on compilation.
+- to don’t use more gas on deployment (deploying contract you don’t use in your code but present in the file imported).
+But for the last one, maybe the compiler is intelligent enough to remove unused contract, I’m not an expert in solidity compilation !
+
+
+[01/20/2024 12:37] mylifechangefast.eth_70767
+Why no answers from the sponsor
+
+
+[01/20/2024 12:44] guy_in0xnito
+If any fellow auditor has gone through the arbitrage part 
+I would really like a bit of explanation! Thanks
+
+
+[01/20/2024 12:59] 0xphi
+the loop iterates 8 times so that it finds the best bestArbAmountIn range from 1/128th to 125% of initial amountIn.
+
+the algorithm uses _rightMoreProfitable which calculate amountOut 3 times based on the midpoint, which is basically simulating the three swaps of the given path.
+
+since the path starts and ends with WETH, imo it's sufficient to use the difference between amoutOut and midpoint to see if there's any arb profit.
+
+MIDPOINT_PRECISION serves as a tiny adjustment to see if right is even more profitable. If so, we assign left point with midpoint. If not, we assign right left point with midpoint. At the beginning of each loop, it always generate a new midpoint that is the midpoint of the new left and right point after the previous iteration. Thus the range keeps shrinking, which is why it's called bisection search.
+
+It's only my interpretation and it might be wrong.
+
+{Reactions}
+🫡 (4) 👍 (5) 
+
+[01/20/2024 16:10] mylifechangefast.eth_70767
+excatly!
+
+{Reactions}
+💜 
+
+[01/20/2024 18:04] engr.pips
+Are you a Nigeiran ?
+
+
+[01/20/2024 18:04] mylifechangefast.eth_70767
+Yes Engr who does Fx
+
+
+[01/20/2024 18:05] engr.pips
+Lol , my country man
+
+{Reactions}
+🕵️ 🇳🇬 (5) 
+
+[01/20/2024 18:06] mylifechangefast.eth_70767
+Would it be cool if we became friends?
+
+{Reactions}
+❤️ (2) 
+
+[01/20/2024 18:10] engr.pips
+Why not brother,  it's a great pleasure indeed hahaha
+
+{Reactions}
+hi5 (2) 
+
+[01/20/2024 18:26] .0xsecuri
+What is the idea behind BallotType.PARAMETER and what is it intended to be used for?
+
+
+[01/20/2024 19:40] ra7946
+it can increase or decrease the value of parameters in config contract. ex: poolsConfigs.sol, stakingConfig.sol
+
+{Reactions}
+🫡 
+
+[01/20/2024 19:48] 7a4raf
+@Daniel Cota check private thread please, thanks
+
+
+[01/20/2024 20:31] infectedfuture
+If a pool exists it must have one of its reserves being WETH or WBTC, like DAI/WETH or DAI/WBTC? Or could there be a DAI/USDC pool for example?
+
+
+[01/20/2024 21:05] _polex
+I think there can be a DAI/USDC pool but it will always be a DAI/WETH and a DAI/BTC
+
+
+[01/20/2024 22:39] danielcota
+Generally yes, with the only exceptions being USDS/DAI and SALT/USDS
+
+{Reactions}
+✅ 
+
+[01/21/2024 01:36] brahma7456
+Started a thread.
+
+
+[01/21/2024 08:29] giraffe0x
+How does a user deposit liquidity for non-WBTC/WETH tokens? e.g. DAI. Which contract/function does he interact with first?
+
+
+[01/21/2024 08:37] danielcota
+depositLiquidityAndIncreaseShare()
+
+
+[01/21/2024 09:07] devanas17
+to borrow USDS, we have to put both WETH/WBTC as collateral or anyone of them?
+
+
+[01/21/2024 09:31] danielcota
+It's WETH/WBTC liquidity as collateral.
+
+
+[01/21/2024 13:07] souilos
+I usually use the --mt to run tests on a single function, any ideas what am I missing here?
+
+I have tried with the function name and the full path
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/Capture_decran_2024-01-21_a_10.06.20-CEDA2.png
+
+
+[01/21/2024 13:09] 0xwizard
+try copying the function name directly, you might have miss-typed it
+
+
+[01/21/2024 13:13] souilos
+I have tried again and with other functions, not working
+
+
+[01/21/2024 13:16] faithxia
+Test function names need to start with the word `test`. The function you are attempting to match is not considered a test function at all, that's why its not working
+
+
+[01/21/2024 13:16] faithxia
+also, not sure if this is a requirement, but the test function might need to be `public`/`external` as well
+
+
+[01/21/2024 13:16] 0xwizard
+this is totally correct
+
+
+[01/21/2024 13:17] faithxia
+See here: <https://book.getfoundry.sh/forge/tests>
+
+> Forge will look for the tests anywhere in your source directory. ***Any contract with a function that starts with `test` is considered to be a test***
+
+
+[01/21/2024 14:11] jovemjeune
+Actually it is true I tried to do same thing with a function starts with test from staking/tests/Liquidity.t.sol and it worked for me.
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-151B2.png
+
+
+[01/21/2024 14:58] sunosuporno
+How is the function `liquidateUser` in the file `CollateralAndLiquidity` called? Is it through some other contract? @Daniel Cota
+
+
+[01/21/2024 15:00] faithxia
+Supposed to be called by a liquidator, which can be an external user but more than likely is a liquidator bot written by someone to detect positions that become under-collateralized and liquidate them for $$$
+
+
+[01/21/2024 15:03] sunosuporno
+Yeah I was wondering same. I thought it would be called in upKeep in some way but apparently it isn't
+
+
+[01/21/2024 15:04] faithxia
+that wouldn't work, liquidation is an action, just like a swap or a trade or etc
+
+
+[01/21/2024 15:04] faithxia
+like it wouldn't make sense to do a swap in `upKeep()`, same idea with liquidation
+
+
+[01/21/2024 15:05] sunosuporno
+But internal swaps are being done in the upkeep function in `Liquidizer`. I thought would make sense to also look for under-collaterized positions there as well, and then liquidate, but I guess there is an issue of gas
+
+
+[01/21/2024 15:07] faithxia
+The internal swaps are not user swaps, liquidation is a user action. Note - I haven't yet really looked into any of this code, was just curious and taking a look today, but ye just talking about in general
+
+
+[01/21/2024 15:08] faithxia
+technically yes you can have it in the `performUpkeep()` flow but that will force users to pay gas for liquidations, as you said
+
+
+[01/21/2024 15:08] faithxia
+you can't automatically detect liquidatable users on chain without paying lots of gas (you have to check basically every user by calling `canUserBeLiquidated()`)
+
+
+[01/21/2024 15:08] faithxia
+its much easier to do that off-chain constantly (every block) and as soon as a liquidatable user is spotted, you can just call `liquidateUser()`
+
+
+[01/21/2024 15:10] sunosuporno
+Yeah I agree with this
+
+
+[01/21/2024 17:43] 0xrobocop
+@Daniel Cota Sent DM sir.
+
+
+[01/21/2024 18:53] danielcota
+It is an external function callable by anyone.
+
+
+[01/22/2024 01:53] guy_in0xnito
+What are the different liquidity pairs in the pools ?
+
+
+[01/22/2024 02:13] danielcota
+These are the initial whitelisted pairs:
+
+SALT/WBTC
+SALT/WETH
+SALT/USDS
+
+WBTC/USDS
+WBTC/DAI
+WBTC/WETH
+
+WETH/USDS
+WETH/DAI
+
+USDS/DAI
+
+
+[01/22/2024 02:40] giraffe0x
+if anyone needs some flowcharts for visualizing flow
+https://x.com/giraffe0x/status/1749259909596914084?s=20
+
+{Embed}
+https://twitter.com/giraffe0x/status/1749259909596914084?s=20
+giraffe (@giraffe0x) on X
+Trying out flowcharts for Salty IO contest
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/GEaeKH8bIAAxThD-310B2.jpg%3Alarge
+Twitter
+
+{Reactions}
+👍 (6) ❤️ (4) 
+
+[01/22/2024 03:09] guy_in0xnito
+The Salt/usds & dai/usds are created due to the aaa profits (0.23) right?
+
+
+[01/22/2024 03:11] danielcota
+Yes, and the users can add liquidity for the pairs as well.
+
+
+[01/22/2024 03:28] reentrant
+:p_pepe_pray:
+
+
+[01/22/2024 04:08] 0xbinchook
+Which networks is Salty intended to be deployed onto, just Ethereum mainnet and Sepolina test-net?
+
+
+[01/22/2024 04:16] danielcota
+Initially, yes.
+
+{Reactions}
+🫡 
+
+[01/22/2024 04:18] 0xbinchook
+Awesome, I can ignore potential those various L2  'quirks'  😉
+
+
+[01/22/2024 04:30] stryder1496
+why cant the user liquidate themselves if they are undercollateralized ??
+
+
+[01/22/2024 04:50] danielcota
+Just to prevent any unforeseen circumstances.  I believe there was another protocol that had a self-liquidation exploit.
+
+{Reactions}
+👍🏻 (3) 
+
+[01/22/2024 05:34] sunosuporno
+has anyone faced errors like this while running tests?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/Screenshot_2024-01-22_at_11.04.17_AM-D35FC.png
+
+
+[01/22/2024 05:37] 0xphi
+```
+COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url  https://rpc.sepolia.org
+```
+
+
+[01/22/2024 05:43] stryder1496
+run the script that they have provided in the docs
+
+
+[01/22/2024 05:43] stryder1496
+Also a lot of times the given rpc doesnt work so try using diffrent rpc's
+
+
+[01/22/2024 06:11] sunosuporno
+Thanks a lot! @Stryder @0xphi it worked, I just skimmed over the installation part as it's pretty much same for foundry projects, so missed this part
+
+{Reactions}
+😀 
+
+[01/22/2024 07:10] stryder1496
+In the ballot struct , there is an address called address1 and number1 , what are they used for exactly ??
+
+
+[01/22/2024 08:26] fktworld
+Usds: Is dai 1:1?
+
+
+[01/22/2024 08:27] danielcota
+Theoretically, but there is no hard ratio.
+
+{Reactions}
+👌 
+
+[01/22/2024 09:01] 0xceletia
+is it possible to deposit any token using `depositLiquidityAndIncreaseShare()`
+
+
+[01/22/2024 09:10] danielcota
+Only whitelisted pairs (as it calls _increaseUserShare) and not the collateral pair.
+
+{Reactions}
+👌 
+
+[01/22/2024 09:49] t0x1c.c0de
+Maybe I'm taking a longer than expected time to go through the codebase, but man I really wish this contest had an additional week... there's quite a bit of custom calculation to inspect..
+
+{Reactions}
+👍 (3) 
+
+[01/22/2024 10:16] senyab
+agree
+
+
+[01/22/2024 10:16] 0x886699
+I  run  the command :  COVERAGE="yes" NETWORK="sep" forge test -vv --rpc-url  https://rpc.sepolia.org  .     But it failed . Anyone knows the reason? thanks indeed
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-46BDB.png
+
+
+[01/22/2024 10:23] 0x886699
+Maybe there is something wrong with clone . it seems that lack of some lib.
+
+
+[01/22/2024 10:33] exd0tpy
+Did you get code like this `git clone https://github.com/code-423n4/2024-01-salty` ?
+
+
+[01/22/2024 10:34] 0x886699
+i  run ,  git clone https://github.com/code-423n4/2024-01-salty.git  . it failed ,so i download it to vscode.  During the process , i think there is something wrong.
+
+{Embed}
+https://github.com/code-423n4/2024-01-salty.git
+GitHub - code-423n4/2024-01-salty
+Contribute to code-423n4/2024-01-salty development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/c735717c-40bb-4e49-aa83-42e5dfa0846f-DE13A
+
+
+[01/22/2024 10:36] 0x886699
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-A8BC8.png
+
+
+[01/22/2024 11:13] forkforkdog
+its usually done with modified node with a contract storage lookup so its okay
+
+{Reactions}
+hi5 
+
+[01/22/2024 11:13] mylifechangefast.eth_70767
+what happens if the collateralandliquidity contract adds liquidity would the liquidity later be used for swapping? @Daniel Cota
+
+
+[01/22/2024 11:15] mylifechangefast.eth_70767
+or just add liq to the pool.sol contract?
+
+
+[01/22/2024 11:18] mylifechangefast.eth_70767
+and will it be a gradual addition of liquidity?
+
+
+[01/22/2024 11:24] danielcota
+WBTC/WETH liquidity used for collateral is swappable in the pools as well, yes.
+
+
+[01/22/2024 11:25] mylifechangefast.eth_70767
+roger that!
+
+
+[01/22/2024 11:56] faithxia
+yep, my point was that you can't check every user to find a liquidatable user on chain, using a node to query it off chain is the right way to do it and it's also why liquidation doesn't occur automatically
+
+{Reactions}
+❤️ 
+
+[01/22/2024 12:20] 0x886699
+Thank you . now it's ok . I  config github.com in hosts file ,and clone salty again. it can run test successfully after i execute test command.
+
+{Reactions}
+🫡 
+
+[01/22/2024 13:14] anmol.eth
+``` if (addedAmount0 > addedAmount1)
+            addedLiquidity = (totalLiquidity * addedAmount0) / reserve0;
+        else addedLiquidity = (totalLiquidity * addedAmount1) / reserve1;```
+
+why do we need this if else check if in the both case addedLiquidity will give same outcome?
+
+
+[01/22/2024 14:29] forkforkdog
+anyone doing echidna on this? dm if wanna chat
+
+
+[01/22/2024 14:54] coffiasd
+exchangeConfig contract set some accesss addresses , are those addresses trusted ? @Daniel Cota
+
+
+[01/22/2024 19:13] danielcota
+It has to due with precision.  One of the tokens in the pair can have more decimals than the other.
+
+
+[01/22/2024 19:13] danielcota
+Yes, they are trusted and internal.
+
+
+[01/23/2024 01:25] lsaudit
+@Daniel Cota  hey, i've DM'd you, please take a look at your priv messages in your spare time - thanks!
+
+{Reactions}
+👍 
+
+[01/23/2024 03:40] agadzhalov
+How a user is supposed to deposit a pair different than WBTC/WETH? Because in `depositCollateralAndIncreaseShare` wbtc and weth are hardcoded https://github.com/code-423n4/2024-01-salty/blob/main/src/stable/CollateralAndLiquidity.sol#L73. Are there any other methods user could deposit collateral?
+
+
+[01/23/2024 03:40] danielcota
+depositLiquidityAndIncreaseShare
+
+{Reactions}
+👍 
+
+[01/23/2024 04:21] spacecake8961
+Hey there 👋
+What is the suppsoed/suggested way of using the script in src/dev/Deployment.sol?
+I have been trying to create a similar script but failling due to various issues, so now I want to use it directly.
+Is it supposed to be executed on Sepolia network? I can see that it supposes the existence of some contracts already
+And would you even recommen using it to get a local testing environment?
+
+
+[01/23/2024 05:25] ac000123_97055_23095
+Awesome. What tool did you use to draw this? Please recommend that one here.
+
+
+[01/23/2024 05:39] tarun1840
+@Daniel Cota hey ive DM'd you, please take a look at it
+
+
+[01/23/2024 06:57] anmol.eth
+Only the whitelisted wallets can vote for the bootstrapping(How these wallets are selected)?
+
+
+[01/23/2024 07:02] danielcota
+They are the wallets that are selected for the Airdrop: https://docs.salty.io/initial-launch/airdrop
+
+{Reactions}
+✅ 
+
+[01/23/2024 07:27] anmol.eth
+can dao remove the wallet restrictions completely when the protocols mature?
+
+
+[01/23/2024 07:34] danielcota
+Yes.
+
+
+[01/23/2024 07:34] anmol.eth
+Is this done through parameter change or something else?
+
+
+[01/23/2024 07:43] dimitar.mitev
+good morning,
+in this function `_sendLiquidityRewards( uint256 liquidityRewardsAmount, uint256 directRewardsForSaltUSDS, bytes32[] memory poolIDs, uint256[] memory profitsForPools, uint256 totalProfits )`, are the `directRewardsForSaltUSDS` part of the `totalProfits`?
+
+
+[01/23/2024 09:28] mylifechangefast.eth_70767
+will it?
+
+
+[01/23/2024 09:29] mylifechangefast.eth_70767
+is there a kind of fixed numbers for them?
+
+
+[01/23/2024 09:32] mylifechangefast.eth_70767
+so there will always be a diff outcome
+
+
+[01/23/2024 09:33] danielcota
+The code favors the calculation with greater precision.
+
+
+[01/23/2024 09:34] anmol.eth
+Is the protocol only meant to support these pools?
+1. whitelisted token : WBTC
+2. whitelisted token : WETH
+3. SALT:USDS
+4. USDS:DAI
+5. WBTC:WETH 
+
+can't we have something like DAI:SALT or some other combinations of whitelisted tokens?
+
+
+[01/23/2024 09:34] mylifechangefast.eth_70767
+Hmmm okay
+
+
+[01/23/2024 09:41] mylifechangefast.eth_70767
+so rounding down is in the favor of this protocol?
+
+
+[01/23/2024 10:03] infectedfuture
+what is rounded down (addedLiquidity) is then used to calculate the amount of shares minted to the user: https://github.com/code-423n4/2024-01-salty/blob/main/src/staking/Liquidity.sol#L102
+So rounding this value down does favor the protocol
+
+
+[01/23/2024 10:05] mylifechangefast.eth_70767
+Sharp!
+
+{Reactions}
+🤝 
+
+[01/23/2024 11:06] forkforkdog
+we have 10 radnom tokens generated in Pools.t.sol
+
+
+[01/23/2024 11:14] anmol.eth
+Thanks🙂 ! They have whitelistPool function
+
+{Reactions}
+❤️ 
+
+[01/23/2024 11:34] anmol.eth
+What is the purpose of allowing calls to any arbitrary address from DAO?
+
+
+[01/23/2024 11:58] danielcota
+For future functionality determine by the contract that is being called.
+
+
+[01/23/2024 12:17] pkqs90
+hey guys. i have a dumb question. whats the rationale of having a vote for starting the exchange or not during the bootstrap phase? iiuc there is no incentive for ppl to vote no?
+
+
+[01/23/2024 13:25] ac000123_97055_23095
+@Daniel Cota ERC777 tokens are not supported either?
+
+
+[01/23/2024 16:11] agadzhalov
+Is it expected a user to be able to burn his own USDS tokens, kind of weird behaviour? 😄
+
+
+[01/23/2024 17:25] santiellena
+I guess that's fine. It's for the user to keep his position above the minimum.
+
+
+[01/23/2024 17:26] santiellena
+And tokens are not actually being burned if you mean in the `CollateralAndLiquidity::repayUSDS` function
+
+
+[01/23/2024 19:13] stormreckson
+They get airdrop tokens for voting
+
+
+[01/23/2024 22:56] danielcota
+The Bootstrap Ballot aids in the decentralization of the launch.  It's to help clarify that the approval of the launch was done by a decentralized group of actors.
+
+
+[01/23/2024 22:56] danielcota
+Just ERC20
+
+
+[01/23/2024 23:10] m4k2
+can I dm you?  @Daniel Cota
+
+{Reactions}
+👍 
+
+[01/24/2024 00:25] spacecake8961
+Started a thread.
+
+
+[01/24/2024 01:13] lsaudit
+@Daniel Cota  - dmed one more time, please check dms in ur spare time, thx
+
+{Reactions}
+👍 
+
+[01/24/2024 02:05] anmol.eth
+Hi @Daniel Cota , I have  asked you a question in a private thread please have a look..
+
+{Reactions}
+👍 
+
+[01/24/2024 09:05] evokid
+is that possible to provide this suggestion to salty sponsors and C4 team? @Jay | C4 🙏🏻
+
+
+[01/24/2024 09:16] ac000123_97055_23095
+@Daniel Cota stakingRewardsEmitter and liquidityRewardsEmitter will have the same code(RewardsEmitter.sol)?
+
+
+[01/24/2024 09:18] danielcota
+Yes
+
+{Reactions}
+👍 
+
+[01/24/2024 09:32] daniel526
+@Daniel Cota check thread!
+
+
+[01/24/2024 09:33] danielcota
+ok! 😄
+
+
+[01/24/2024 11:19] giraffe0x
+visual paradigm, can google it
+
+{Reactions}
+🔥 (2) 
+
+[01/24/2024 11:28] holydevoti0n
+@Daniel Cota is there an invariant percentage for how much the Zap should charge the user? What's the limit?
+
+
+[01/24/2024 11:28] danielcota
+What do you mean by charge?
+
+
+[01/24/2024 11:30] holydevoti0n
+I noticed that when using the zap function, the user doesn't receive his total amount of liquidity back because `zapAmountA += pools.depositSwapWithdraw( tokenB, tokenA, swapAmountB, 0, block.timestamp );` is called and this calls the arbitrage that takes a fee for the DAO. After deducting this fee, the user should receive the total amount, right?
+
+
+[01/24/2024 11:31] danielcota
+Arbitrage happens after the swap is complete.  It doesn't affect the swap output returned to the user.
+
+{Reactions}
+👍 
+
+[01/24/2024 11:32] holydevoti0n
+May I send you a DM?
+
+{Reactions}
+👍 (2) 
+
+[01/24/2024 13:34] guy_in0xnito
+Hey so where does 10% of salt emmison go?
+
+
+[01/24/2024 13:42] danielcota
+To the SALT/USDS liquidity providers.
+
+
+[01/24/2024 13:45] 0xdemonnn
+create private thread, pls check if you have free time @Daniel Cota 😁
+
+
+[01/24/2024 16:27] guy_in0xnito
+@Daniel Cota isn't the share for liquidity providers 45% same as for xSALT holders
+
+
+[01/24/2024 16:27] guy_in0xnito
+?
+
+
+[01/24/2024 18:36] 0xcwalter
+@Daniel Cota the project will only be deployed on eth mainnet?
+
+
+[01/24/2024 19:10] bronze_pickaxe
+@oxwhite your thread is public, not sure if thats intended :Okay:
+
+
+[01/24/2024 19:16] oxwhite
+ı thought that was private . how many people have seen my thread lol. tHanks for letting me know closed in the middle
+
+
+[01/24/2024 21:07] danielcota
+From the comment:
+
+    // The percent of SALT Rewards that will be sent to the SALT/USDS pool.
+    // This is done as SALT/USDS while an important pair for the exchange isn't involved in any arbitrage swap cycles (which would yield arbitrage profit for it as well as all pools which take part in arbitrage take a share of the profit).
+    // This is because it isn't part of the usual token/WBTC and token/WETH structure - which allows other pools to be part of arbitrage swap cycles when other pools are traded.
+
+
+[01/24/2024 21:07] danielcota
+Initially, yes.
+
+
+[01/25/2024 01:31] guy_in0xnito
+Sir sent you a dm
+
+
+[01/25/2024 01:56] guy_in0xnito
+So 45% goes to SALT Stakers  45% goes to any Liquidity providers and 10% goes to USDS/SALT  Pool ?
+
+
+[01/25/2024 03:19] 0x11singh99
+have all findings from trail of bits and abdk audits fixed in current code ? @Daniel Cota
+
+
+[01/25/2024 03:27] zhaojie
+Do I have to connect to rpc.sepolia.org for every test? Is there any way to fork it locally.
+
+
+[01/25/2024 03:29] danielcota
+From SaltRewards, yes.
+
+
+[01/25/2024 03:29] danielcota
+All the findings that I decided to fix, yes.
+
+{Reactions}
+👍 
+
+[01/25/2024 03:29] danielcota
+Not sure.  I ran it locally off of a local Sepolia node.
+
+
+[01/25/2024 03:32] zhaojie
+I'm trying to run local nodes. Remote nodes are too slow
+
+
+[01/25/2024 03:32] 0x11singh99
+I think only some info from abdk has been left unfixed . right ?
+
+
+[01/25/2024 03:48] danielcota
+Yes
+
+{Reactions}
+👍 
+
+[01/25/2024 04:04] zhaojie
+I didn't find a way to run the local Sepolia node. Any suggestions?
+
+
+[01/25/2024 04:05] zhaojie
+anvil --fork-url https://rpc2.sepolia.org
+
+
+[01/25/2024 04:05] zhaojie
+doesn't work
+
+
+[01/25/2024 04:05] danielcota
+I didn't use anvil.  I just set up a geth node.
+
+
+[01/25/2024 04:06] guy_in0xnito
+Sir dmed you
+
+
+[01/25/2024 04:08] faithxia
+@zhaojie you can get a free Sepolia node from Alchemy. It will work much better than any public RPC nodes. Everyone should use a node provider for situations like this
+
+
+[01/25/2024 04:09] faithxia
+But yeah best case would be to run a local geth node, but then you'd need to wait for it to sync up first which is another small hurdle
+
+
+[01/25/2024 04:10] zhaojie
+okay thanks
+
+
+[01/25/2024 04:15] faithxia
+Just FYI, when you run a local node like this, it's still using the RPC node that you specify to fork off of
+
+
+[01/25/2024 04:17] zhaojie
+I gave up and I still use the remote sepolia node 😄
+
+
+[01/25/2024 04:23] faithxia
+Would you like some help? The steps to use Alchemy are roughly as follows:
+
+1. Open an account / login with Google on Alchemy
+2. Go to <https://dashboard.alchemy.com/apps> and press the blue "+ Create new app" button
+3. Pick Ethereum Sepolia as your network (see screenshot)
+4. Once you've created the App, you'll see an "API Key" button in the app dashboard. It has a link that you can use as the RPC url. Mine is `https://eth-sepolia.g.alchemy.com/v2/<SECRET_API_KEY_HERE>`. Just copy that and use it
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-55796.png
+
+{Reactions}
+💜 
+
+[01/25/2024 04:23] faithxia
+just make sure not to disclose the entire RPC url to anyone, the secret api key is what you have to keep secret, that's all
+
+
+[01/25/2024 04:23] zhaojie
+I see , thanks
+
+
+[01/25/2024 12:05] 0xceletia
+why performUpkeep() is open to all, someone could simply create a bot to call this whenever it is profitable
+
+
+[01/25/2024 12:06] 0xceletia
+this way protocol loses 5% everytime but keeps everything right
+
+
+[01/25/2024 12:06] 0xceletia
+i guess this is the purpose
+
+
+[01/25/2024 12:35] danielcota
+Hopefully they will! 😄
+
+{Reactions}
+👀 
+
+[01/25/2024 14:50] 0xceletia
+is confirmation from dao a must for a proposal to be passed
+
+
+[01/25/2024 17:34] 0xhelium
+Left you a question in PT please reply
+
+
+[01/25/2024 18:15] 7a4raf
+can i get an explanation on `liquidateUser(address wallet)` function please?
+
+
+[01/25/2024 18:27] 0xauditism
+what needs to be explained ?
+
+
+[01/25/2024 22:27] evokid
+@Daniel Cota  dmed you.
+
+
+[01/25/2024 23:53] danielcota
+Yes.
+
+
+[01/25/2024 23:53] danielcota
+Read the comments in the code.
+
+
+[01/26/2024 14:34] guy_in0xnito
+Why are we staking salt through airdrop contract!
+
+
+[01/26/2024 21:18] collinsoden
+@Daniel Cota what are totalRewards and totalShares in StakingRewards for each pool?
+
+
+[01/26/2024 21:33] danielcota
+Read the comments
+
+{Reactions}
+👍 
+
+[01/26/2024 21:33] danielcota
+Airdrop is in xSALT
+
+
+[01/27/2024 00:31] mylifechangefast.eth_70767
+Started a thread.
+
+
+[01/27/2024 06:18] 0xnirlin
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/download-_14_-8F0BD.jpg
+
+{Reactions}
+😆 (9) 
+
+[01/27/2024 08:22] anmol.eth
+looks like @Daniel Cota 😂
+
+{Reactions}
+😆 (2) 
+
+[01/27/2024 13:33] coffiasd
+🤣 see you again this time you must find something amazing
+
+
+[01/27/2024 13:53] guy_in0xnito
+Then why do we send 5 mil salt to airdrop contract?
+And in the docs of salt distribution it also says so ?
+
+
+[01/27/2024 16:44] 0xhelium
+Read the comments
+
+
+[01/27/2024 16:44] 0xhelium
+Try it out on paper
+
+
+[01/27/2024 16:44] 0xhelium
+I'am salty
+
+{Reactions}
+🧂 
+
+[01/27/2024 17:32] lsaudit
+Are every issues from Trail of Bits report fixed?
+
+
+[01/27/2024 17:34] infectedfuture
+p.47-48 of report there's a fix review chapter
+
+
+[01/27/2024 17:34] lsaudit
+thanks!
+
+{Reactions}
+hi5 (2) 
+
+[01/27/2024 19:26] lsaudit
+I have trouble understanding this function: https://github.com/code-423n4/2024-01-salty/blob/53516c2cdfdfacb662cdea6417c52f23c94d5b5b/src/pools/Pools.sol#L366  Protocol states that it does not support e.g. fee on transfers. So - as far as I understend, I can only work on whitelisted pools, correct? What will happen (flow?), when I call swap() with some unwhitelisted tokens? E.g. fee on transfer? I cannot navigate to the line of code which is responsible for checking if swapTokenIn or swapTokenOut is whitelisted
+
+
+[01/27/2024 19:35] lsaudit
+The same question here, in the deposit() - https://github.com/code-423n4/2024-01-salty/blob/53516c2cdfdfacb662cdea6417c52f23c94d5b5b/src/pools/Pools.sol#L205  what stops user from calling `deposit() ` with fee on transfer? I don't see any check for that
+
+
+[01/27/2024 19:51] 0xciphky
+If the pool isn't whitelisted they'll be no liquidity so the swap wouldn't work
+
+{Reactions}
+thankyou 
+
+[01/27/2024 19:51] infectedfuture
+only whitelisted pools have reserves, so only on these one can a swap happen
+
+{Reactions}
+thankyou 
+
+[01/27/2024 19:53] infectedfuture
+nothing, because `deposit()` just allow a user to send tokens to the pool which can then be used as `swapAmountIn` when calling `swap()`
+If someone do not deposit before, they will have to call `depositSwapWithdraw`
+its different from addingLiquidity to a pool which affect its reserves
+
+{Reactions}
+thankyou 
+
+[01/27/2024 20:17] lsaudit
+I can't see the whitelisting check in `addLiquidity()` either. What stops me from providing a liquidity to non-whitelisted token?
+
+
+[01/27/2024 20:18] 0xarz
+its in _increaseUserShare()
+
+{Reactions}
+thankyou (2) 
+
+[01/27/2024 20:20] lsaudit
+thank you! now everything is clear!
+
+{Reactions}
+👍 (4) 😀 
+
+[01/27/2024 20:55] danielcota
+Because the 5 million SALT is staked to form xSALT and then distributed to Airdrop recipients.
+
+
+[01/27/2024 20:56] danielcota
+No, some are not fixed - the ones marked as Info.
+
+
+[01/28/2024 10:47] fktworld
+Is the owner a dao contract?
+
+
+[01/28/2024 10:54] danielcota
+yes
+
+{Reactions}
+✅ 👍 
+
+[01/28/2024 13:44] evokid
+dmed @Daniel Cota
+
+
+[01/28/2024 13:48] ubl4nk
+@Daniel Cota Could you see my PT
+
+
+[01/28/2024 16:00] c0pp3rscr3w3r
+Owner for every contract?
+
+
+[01/28/2024 16:01] fktworld
+Owner modifier
+
+
+[01/28/2024 16:17] mylifechangefast.eth_70767
+what approves exchangeLive when it set to true ?
+
+Anyone?
+
+
+[01/28/2024 16:38] infectedfuture
+best way is to check like this
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-1D5B8.png
+
+{Reactions}
+thankyou ❤️ (4) 
+
+[01/28/2024 18:52] mylifechangefast.eth_70767
+sure for you
+
+
+[01/28/2024 18:56] mylifechangefast.eth_70767
+Started a thread.
+
+
+[01/28/2024 23:30] acegawd
+DMed you @Daniel Cota
+
+{Reactions}
+👍 
+
+[01/29/2024 05:40] mylifechangefast.eth_70767
+DMed you @Daniel Cota
+
+
+[01/29/2024 06:01] senyab
+Dmed you @Daniel Cota
+
+
+[01/29/2024 06:13] mylifechangefast.eth_70767
+After swapping is the adjusted zapping amount meant to be equal?
+
+
+[01/29/2024 06:14] mylifechangefast.eth_70767
+anyone?
+
+
+[01/29/2024 06:16] mylifechangefast.eth_70767
+Or is the goal to ensure that when these adjusted amounts are used to add liquidity to the pool, the resulting ratio between the two tokens aligns with the existing ratio in the pool's reserves?
+
+
+[01/29/2024 07:09] 0xauditism
+the concept is to adjust to the same ratio of the pool. If the pool has 80% eth and 20% btc, and you put 5 eth and 5 btc, zapping will adjust the ratio for you
+
+{Reactions}
+hi5 
+
+[01/29/2024 07:23] daniel526
+@Daniel Cota check private thread!
+
+
+[01/29/2024 08:11] mylifechangefast.eth_70767
+Will a Wallet continue to have access when it reaches a place to not have access
+
+
+[01/29/2024 08:11] mylifechangefast.eth_70767
+@Daniel Cota please check private thread
+
+
+[01/29/2024 11:42] mylifechangefast.eth_70767
+where can I get updateArbitrageIndicies(); function?
+
+
+[01/29/2024 11:59] the_code_doctor
+in the PoolStats.sol Contract? do you mean that?
+
+
+[01/29/2024 12:30] mylifechangefast.eth_70767
+I've not gone through it though, I will check it right away!
+
+
+[01/29/2024 13:22] evokid
+@Daniel Cota friend Dmed you
+
+
+[01/29/2024 18:53] tamayonft
+hey guys question is the protocol offering free swaps in this version?
+
+
+[01/29/2024 19:02] mylifechangefast.eth_70767
+wdym
+
+
+[01/29/2024 20:03] forgebyola
+Hello guys, I'm getting errors evm revert when trying to run tests
+
+
+[01/29/2024 20:04] forgebyola
+All tests are giving me this error, unfortunately it's not giving me more info except the "FAIL. Reason: EvmError: Revert" setup()
+
+
+[01/29/2024 20:04] forgebyola
+Am I the only one, please help
+
+
+[01/29/2024 20:09] forgebyola
+can I send screenshots in here?
+
+
+[01/29/2024 20:13] forgebyola
+This is the error, pls assist. I didn't alter anything in the original code
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/failedtest-67B13.png
+
+
+[01/29/2024 20:26] halitus.eth
+run the unit tests on Sepolia testnet
+
+{Reactions}
+👌🏼 
+
+[01/29/2024 20:41] infectedfuture
+and you can use alchemy for the rpc url
+
+{Reactions}
+✅ 
+
+[01/29/2024 21:02] 0xhelium
+Copy paste the test command in the contest readme and change the mock url by sepolia rpc url
+
+{Reactions}
+✅ 
+
+[01/29/2024 21:02] 0xhelium
+You may add --match-test or other pattern if you wish
+
+
+[01/29/2024 21:37] tamayonft
+in the documentation it said that "provide Zero Fees on all swaps" but i dont see that mechanism in the project
+
+
+[01/29/2024 21:43] infectedfuture
+you don't see it because there's no fees :D
+If there was fees, you'll see some code to account for fees
+
+
+[01/29/2024 22:10] 0xhelium
+In uniswap you pay 0.3% fees I think
+
+
+[01/29/2024 22:28] tamayonft
+ohh i got it now i was thinking the whole time that the fee was gas prices fee
+
+{Reactions}
+👍 
+
+[01/29/2024 23:21] danielcota
+Swaps have zero fees, yes.
+
+
+[01/29/2024 23:31] forgebyola
+Oh, thanks alot. Now I think about it, I read about it on their documentation. Completely forgot
+
+
+[01/30/2024 00:46] olanre_waju
+@Daniel Cota i have a question in a private thread pls...
+
+
+[01/30/2024 02:29] 0xbinchook
+...and with the QA report submitted and I'm done for Salty!
+
+Thanks for the excellent docs, video and public responses in this channel @Daniel Cota _(they saved me asking so many private thread questions 😓 )
+
+Best of luck everyone!
+
+{Reactions}
+😀 🥳 (5) 🚀 
+
+[01/30/2024 04:56] gr34t.l4k3
+@Daniel Cota can you check my private thread
+
+
+[01/30/2024 05:51] daniel526
+@Daniel Cota check private thread!
+
+
+[01/30/2024 09:07] forgebyola
+Good luck everyone
+
+
+[01/30/2024 09:07] forgebyola
+Would submit my last findings today
+
+{Reactions}
+🥳 (3) 
+
+[01/30/2024 09:14] fktworld
+Switch an RPC
+
+
+[01/30/2024 09:33] forgebyola
+It worked already. Thanks
+
+
+[01/30/2024 09:55] evokid
+10 hours left for the contest? @kartoonjoy | C4🎇🎇
+
+{Reactions}
+✅ 
+
+[01/30/2024 12:24] kartoonjoy
+https://code4rena.com/audits/2024-01-saltyio#top
+
+
+[01/30/2024 13:18] fktworld
+There are still 6 hours left.
+
+{Reactions}
+🚀 (2) 
+
+[01/30/2024 13:39] evokid
+@Daniel Cota check your DM
+
+
+[01/30/2024 13:45] forkforkdog
+how's your results guys, everyone stisfied?
+
+
+[01/30/2024 13:49] irving6969
+cooking at 5 am😂
+
+{Reactions}
+4739_Skeletor (2) 💯 😭 
+
+[01/30/2024 13:50] evokid
+Vegan?
+
+
+[01/30/2024 13:52] evokid
+I still believe this audit needs to be extended, it's a very customizable concept structure..
+
+
+[01/30/2024 13:53] c0pp3rscr3w3r
+can they extend rly?
+
+{Reactions}
+same 
+
+[01/30/2024 13:53] c0pp3rscr3w3r
+hsa it ever happenedf
+
+
+[01/30/2024 13:54] evokid
+too late I already suggested but no response.
+
+
+[01/30/2024 13:54] irving6969
+I haven't slept yet
+
+{Reactions}
+🫡 (2) 🫂 (3) 
+
+[01/30/2024 14:15] fktworld
+I’m drinking coke.
+
+
+[01/30/2024 14:26] 0xjuancito
+Finished with the contest. Good luck everyone, and good job by the project devs 👌
+
+{Reactions}
+🫂 (9) 👆 🙂 (2) 
+
+[01/30/2024 14:36] infectedfuture
+i didn't know we could mix it with water
+
+{Reactions}
+👍 (3) 😅 🤣 (5) 
+
+[01/30/2024 14:37] horpheyhemmy
+First timer .
+Submitted what I found and Goodluck everyone !  🫡
+
+{Reactions}
+🔥 (4) 
+
+[01/30/2024 15:26] jes16jupyter
+Finish my Second attempt. Gl everyone!
+
+{Reactions}
+🫡 
+
+[01/30/2024 16:46] 7a4raf
+Let's hope for the best🔥🔥
+
+{Reactions}
+🫡 
+
+[01/30/2024 18:33] bengyles
+not feeling well today so finishing off here, at least I managed to submit a small QA report 😂  Great work by the devs, the code is well documented and clean. I have learned some things along the way as well so it was a good learning opportunity 🙏
+
+{Reactions}
+💜 (5) 😀 
+
+[01/30/2024 18:54] collinsoden
+@Daniel Cota did a great job. This looks like what Uncle Bob would call "Clean code" 🫡
+
+{Reactions}
+😀 
+
+[01/30/2024 19:26] evokid
+The unit tests are clean and rich, they helped a lot ✅
+
+
+[01/30/2024 19:58] c0pp3rscr3w3r
+loved reading the codebase
+
+{Reactions}
+😀 
+
+[01/30/2024 19:58] j4x_98
+GG guys, really looking forward to reading your findings on this 🫡
+
+{Reactions}
+🙌 
+
+[01/30/2024 19:59] c0pp3rscr3w3r
+Learnt a lot, A really important competition to have attended
+
+{Reactions}
+👍 (6) 
+
+[01/30/2024 19:59] c0pp3rscr3w3r
+💪🏻 :10_10: 📈
+
+
+[01/30/2024 20:02] jovemjeune
+@Daniel Cota did a great job and I honestly learned a lot of things from this contest. Thanks everyone,let's hope for the best 🔥Additionaly,I should agree that the codebase and documentations were really great
+
+{Reactions}
+❤️ (3) 😀 
+
+[01/30/2024 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺wardens The **Salty.IO** audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the audit is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a Contest-Admin if you have questions along the way!
+
+{Reactions}
+👑 (3) 🌟 🚀 (5) C4Keycap (2) ❤️‍🔥 
+
+[01/30/2024 20:04] _polex
+Yeah great job by @Daniel Cota. A project so well documented like this is so easy to get used to it. Also I really appreciate the attendance by Daniel and the clear explanations. Hope the protocol can extract as much value as possible
+
+{Reactions}
+👍 (5) 😀 
+
+[01/30/2024 20:04] 0xarz
+massive respect to @Daniel Cota for writing this codebase on his own!:hi5:
+
+{Reactions}
+🔥 (12) 💪🏻 (5) 10_10 (4) 😀 
+
+[01/30/2024 20:05] c0pp3rscr3w3r
+Truly impressive imo
+
+{Reactions}
+💯 (6) 
+
+[01/30/2024 20:11] c0pp3rscr3w3r
+is that high
+
+
+[01/30/2024 20:12] j4x_98
+I expected worse haha so we'll at least get to see some money In a reasonable timeframe 😅
+
+
+[01/30/2024 20:50] forgebyola
+Honestly Salty was one of the cleanest codebase I've audited because of how well structured the system was. Huge props to the developers🎉
+
+{Reactions}
+👍 (7) 😀 
+
+[01/30/2024 22:41] pxng0lin
+After watching the intro vid, i was like... No way, I want to do my best in finding anything that can help bring more value and less risk to this project. Well done to you @Daniel Cota  for building this alone, the Lone Dev of Salty... Btw, the name of it is fine! I hope our submissions are useful and benefit your project moving forward.
+
+{Reactions}
+😀 (3) 10_10 (4) 
+
+[01/30/2024 23:47] exd0tpy
+GG
+
+
+[01/31/2024 01:37] banditx0x
+1008 submissions 2 valid 🙊
+
+{Reactions}
+🫣 (4) 😆 (7) 🤔 
+
+[01/31/2024 09:25] haxatron1
+Sub count has been increasing lately
+
+
+[01/31/2024 12:43] santiellena
+It is so frustrating not to be able to see the findings of other Wardens hahahah (first audit, just wanna learn)
+
+
+[01/31/2024 12:44] santiellena
+Does anyone know if it takes a long time for the findings to be made public?
+
+
+[01/31/2024 13:05] c0pp3rscr3w3r
+You can get backstage access if you meet the requirements
+
+
+[01/31/2024 13:08] anjali_t
+until the final report is published
+
+
+[01/31/2024 13:58] santiellena
+thanks guys!
+
+
+[01/31/2024 22:12] mylifechangefast.eth_70767
+na one dude run am o
+
+
+[02/01/2024 01:36] lilizhu
+yea, It takes quite a while...Maybe we can discusss the result together after the competition is completed..
+
+{Reactions}
+👍 (2) 
+
+[02/01/2024 01:39] lilizhu
+The official website may provide a page in where  you can apply to read other people's audit results after the competition
+
+
+[02/01/2024 22:15] infectedfuture
+At the very least 2 or 3 months for a contest like this one. Maybe more
+
+
+[02/01/2024 22:16] infectedfuture
+But as someone said, you can get backstage access to read other wardens submissions right after the contest ends
+
+
+[02/01/2024 22:26] santiellena
+Thanks guys!
+
+
+[02/06/2024 02:19] t0x1c.c0de
+Honestly it was a bit surprising for me to see some of the bugs found, which went unspotted by the ToB audit!
+There's always a chance of a few leaked bugs but it felt like a couple of them were too obvious to be missed by such a reputed firm.
+
+
+[02/06/2024 02:20] t0x1c.c0de
+A bit scary, but gives me hope as an independent auditor too.
+
+{Reactions}
+💯 (20) 🥲 
+
+[02/07/2024 03:50] linmiaomiao_qaq
+yes，i also find some high bugs，but But I feel that tob should not miss these bugs......
+
+
+[02/07/2024 03:52] pkqs90
+I guess this gives the protocol team more incentive to bring their project to auditing contests, which is great for us 🙂
+
+{Reactions}
+❤️ 👍 
+
+[02/07/2024 21:02] haxatron1
+I covered everything but the atomic swap functionality, but if you read ToB report you will know why some places had more bugs than others
+
+{Reactions}
+👍🏽 (3) 
+
+[02/15/2024 13:16] sivanesh_808
+Result ???
+
+
+[02/15/2024 14:47] j4x_98
+Will still take some time 👀 PJQA has not even started. You can check dailywarden if you don't have backstage access
+
+{Reactions}
+👍 
+
+[02/15/2024 16:13] haxatron1
+i would say another 2-4 weeks or so
+
+{Reactions}
+😂 (3) 
+
+[02/15/2024 16:13] haxatron1
+not so soon
+
+
+[02/17/2024 17:05] aripse
+What/where is dailywarden ?
+
+
+[02/17/2024 17:09] jvorex
+https://www.dailywarden.com/
+
+{Embed}
+https://www.dailywarden.com/
+Daily Warden - Active and upcoming contests sent to you daily
+18 Active and Upcoming Contests
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/d9zjlrJR-29B78.png
+
+{Reactions}
+🙏 (3) thankyou 
+
+[02/18/2024 16:30] 7a4raf
+Am i the only one who can't see the salty contest listed?
+
+
+[02/18/2024 17:15] jvorex
+no
+
+{Reactions}
+👍🏻 (3) 
+
+[02/18/2024 20:57] tamayonft
+wen QA?
+
+
+[02/18/2024 22:31] kingsman_0047
+rewards distrebuted lol
+
+
+[02/25/2024 08:31] jes16jupyter
+seems we are in esclation process.
+
+
+[02/25/2024 09:21] infectedfuture
+PJQA already started, once a contest is over you should check here regularly to not miss it : https://discord.com/channels/810916927919620096/1166686843421593631
+
+
+[02/25/2024 09:45] banditx0x
+Is there really nothing you can do without backstage
+
+
+[02/25/2024 09:45] banditx0x
+for escalations?
+
+
+[02/25/2024 09:47] haxatron1
+Yep
+
+
+[02/25/2024 09:48] haxatron1
+And escalations are over already so final results should be soon
+
+
+[02/25/2024 09:52] banditx0x
+Ahh thank you, I was hoping to participate in escalations but didn't realise its already over
+
+{Reactions}
+👍 (2) 
+
+[02/25/2024 11:31] 7a4raf
+I don't think you can without backstage role
+
+
+[02/26/2024 16:43] holydevoti0n
+https://tenor.com/klTNXRpMJll.gif
+
+{Embed}
+https://tenor.com/view/waiting-for-you-gif-8551867081249355873
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/waiting-for-you-1615B.png
+
+
+[02/26/2024 16:43] brahma7456
+today EOD or may be tmrw👍
+
+{Reactions}
+🚀 (4) 
+
+[02/27/2024 03:22] jes16jupyter
+one step closer to backstage.
+
+{Reactions}
+🥂 
+
+[02/27/2024 04:25] xyzbtchunt
+When?
+
+
+[02/27/2024 07:49] 7a4raf
+https://tenor.com/view/star-wars-yoda-patience-sw3-gif-21070142
+
+{Embed}
+https://tenor.com/view/star-wars-yoda-patience-sw3-gif-21070142
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/star-wars-yoda-E3998.png
+
+
+[02/27/2024 18:09] unique0x0
+https://tenor.com/view/waiting-waiting-patiently-waiting-for-you-waiting-on-you-gif-13867271702351240120
+
+{Embed}
+https://tenor.com/view/waiting-waiting-patiently-waiting-for-you-waiting-on-you-gif-13867271702351240120
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/waiting-waiting-patiently-273E5.png
+
+
+[02/28/2024 12:57] jes16jupyter
+😐
+
+{Reactions}
+😐 (2) 
+
+[02/28/2024 17:07] 0xhelium
+In few hours I guess.. looks like it's being finalized
+
+
+[02/28/2024 17:47] _paperparachute
+🤑 🎉  Awards for **Salty.IO**:
+
+$9,530.29 USDC » @0xpiken
+$5,264.15 USDC » @t0x1c
+$2,659.20 USDC » @handsomegiraffe
+$2,659.20 USDC » @zzebra83
+$2,551.96 USDC » @0xRobocop
+$2,252.86 USDC » @banditx0x
+$2,147.69 USDC » @klau5
+$1,723.82 USDC » @niroh
+$1,452.85 USDC » @oakcobalt
+$1,268.77 USDC » @Bauchibred
+$1,266.45 USDC » @fnanni
+$1,158.39 USDC » @peanuts
+$1,130.15 USDC » @ether_sky
+$1,040.82 USDC » @0xAsen
+$1,016.87 USDC » @grearlake
+$988.03 USDC » @Draiakoo
+$951.02 USDC » @Toshii
+$817.82 USDC » @haxatron
+$811.39 USDC » J4X
+$716.57 USDC » @israeladelaja
+$686.36 USDC » @jasonxiale
+$588.55 USDC » @zhaojie
+$569.31 USDC » @PENGUN
+$563.98 USDC » @0xMango
+$553.92 USDC » @AgileJune
+$527.53 USDC » @vnavascues
+$493.90 USDC » @stackachu
+$460.07 USDC » @00xSEV
+$453.40 USDC » @0xCiphky
+$453.20 USDC » DedOhWale
+
+{Reactions}
+❤️ (3) 
+
+[02/28/2024 17:47] _paperparachute
+$448.04 USDC » @0x3b
+$445.95 USDC » @ZanyBonzy
+$425.50 USDC » LinKenji
+$405.40 USDC » @OMEN
+$403.43 USDC » @Arz
+$393.38 USDC » @0xGreyWolf
+$385.58 USDC » @DanielArmstrong
+$385.27 USDC » @audinarey
+$372.80 USDC » @auditism
+$372.80 USDC » @VAD37
+$349.45 USDC » @linmiaomiao
+$347.66 USDC » BiasedMerc
+$288.62 USDC » @lsaudit
+$287.90 USDC » @juancito
+$286.89 USDC » @jesjupyter
+$281.44 USDC » @0xVolcano
+$272.92 USDC » Myrault
+$272.92 USDC » miaowu
+$268.42 USDC » @KupiaSec
+$268.42 USDC » @deepplus
+$264.16 USDC » @CongZhang-CertiK
+$264.16 USDC » n1punp
+$255.83 USDC » @K42 Ψ
+$228.18 USDC » @dharma09
+$218.12 USDC » @0x11singh99
+$216.49 USDC » @0xAnah
+$212.92 USDC » @Jorgect
+$196.47 USDC » @0xCinghale
+$173.03 USDC » @a3yip6
+$168.77 USDC » @0xBinChook
+$163.11 USDC » @Tripathi
+$159.06 USDC » @cats
+$151.93 USDC » @wangxx2026
+$133.99 USDC » @iceBear
+$128.64 USDC » @0xWaitress
+$126.72 USDC » @djxploit
+$126.64 USDC » @0xbepresent
+$125.62 USDC » @Topmark
+$119.16 USDC » @b0g0
+$115.49 USDC » @Udsen
+$111.08 USDC » @Piña
+$104.52 USDC » @0xHelium
+$103.73 USDC » @twcctop
+$101.80 USDC » @erosjohn
+$91.94 USDC » @infect3d
+$90.94 USDC » @Rhaydden
+$90.94 USDC » @inzinko
+$90.94 USDC » @josephdara
+$89.37 USDC » @Kingsman
+$87.74 USDC » @evokid
+$87.74 USDC » @Silvermist
+$87.74 USDC » @Stormreckson⛈
+$83.46 USDC » @nonseodion
+$82.28 USDC » @KingNFT
+$79.35 USDC » @pkqs90
+$79.25 USDC » @forgebyola
+$76.92 USDC » @Kaysoft
+$73.76 USDC » 0xSmartContractSamurai
+$72.22 USDC » @ayden
+$72.13 USDC » @7ashraf
+$69.54 USDC » @thekmj
+$67.25 USDC » @Kalyan-Singh
+$62.25 USDC » Ward
+$60.13 USDC » @hunter_w3b
+$59.44 USDC » @santiellena
+$55.12 USDC » @aman
+$54.81 USDC » @CodeCipher
+$53.49 USDC » @Lalanda
+$53.49 USDC » @SpicyMeatball
+$53.49 USDC » @eeshenggoh
+$49.92 USDC » @0xanmol
+$47.36 USDC » @lanrebayode77
+$45.22 USDC » @Krace
+$44.44 USDC » 0xmuxyz
+
+{Reactions}
+❤️ (4) 🚀 (3) 🎉 (2) 
+
+[02/28/2024 17:47] _paperparachute
+$44.44 USDC » @Hajime
+$43.42 USDC » solmaxis69
+$39.62 USDC » @0xfave ⨀
+$39.34 USDC » @0xSmartContract
+$39.34 USDC » @0xepley
+$39.34 USDC » @Sathish9098
+$39.34 USDC » @catellatech
+$39.34 USDC » @Fouzantanveer
+$39.34 USDC » @foxb868
+$39.34 USDC » @hassanshakeel13
+$39.34 USDC » @jauvany
+$39.34 USDC » @kaveyjoe
+$39.34 USDC » @kinda_very_good
+$39.34 USDC » @rspadi
+$39.34 USDC » @yongskiws
+$34.83 USDC » @zhaojohnson
+$32.82 USDC » @cu5t0mpeo
+$32.48 USDC » @Rolezn
+$32.48 USDC » @sivanesh_808
+$32.48 USDC » @slvDev
+$31.20 USDC » @Matue
+$31.20 USDC » @ReadyPlayer2
+$31.20 USDC » @dutra
+$31.20 USDC » @piyushshukla599
+$31.20 USDC » zhanmingjing
+$30.33 USDC » @n0kto
+$29.55 USDC » @Beepidibop
+$28.01 USDC » chaduke
+$27.48 USDC » 0xAlix2
+$26.70 USDC » @Drynooo
+$25.07 USDC » @Ephraim
+$25.07 USDC » LeoGold
+$20.79 USDC » @JCK
+$20.79 USDC » @jcfichtner
+$20.79 USDC » Pechenite
+$20.79 USDC » @Raihan
+$20.79 USDC » @naman1778
+$20.79 USDC » @unique
+$20.45 USDC » @celetia
+$16.32 USDC » @zach
+$13.32 USDC » The-Seraphs
+$11.69 USDC » @Tigerfrake
+$11.69 USDC » @codeslide
+$11.69 USDC » @csanuragjain
+$11.69 USDC » @eta
+$11.16 USDC » @memforvik
+$10.87 USDC » @neo.crao
+$8.76 USDC » @0xPluto
+$8.76 USDC » @Limbooo
+$8.76 USDC » @gkrastenov
+$8.76 USDC » @lilizhu
+$8.76 USDC » @y4y
+$8.76 USDC » @zxriptor
+$2.41 USDC » @HALITUS.eth
+$1.63 USDC » Imp
+$1.63 USDC » @KHOROAMU
+$1.63 USDC » @MSaptarshi
+$1.63 USDC » @agadzhalov
+$1.63 USDC » ewah
+$1.63 USDC » @okolicodes
+$1.63 USDC » @parrotAudits0
+$1.63 USDC » @rudolph
+$0.78 USDC » @0xlemon
+$0.78 USDC » @AuditWolf
+$0.78 USDC » @CaeraDenoir
+$0.78 USDC » @c0pp3rscr3w3r
+$0.78 USDC » @0xBitcoin
+$0.78 USDC » @holydevoti0n
+$0.78 USDC » @iamandreiski
+$0.78 USDC » @mussucal
+$0.78 USDC » novodelta
+
+🏁 Findings summary
+-------------------------------------—
+High risk findings: 6 unique (113 total)
+Med risk findings: 31 unique (278 total)
+Gas reports: 20 (Best: 0xVolcano)
+QA reports: 57 (Best: juancito)
+Advanced analysis reports: 22 (Best: peanuts)
+
+Awards will be distributed on Polygon within the next week. Congratulations all!  💸 💸 💸
+
+*Note: If you participated in this audit and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+🚀 (9) ❤️ 
+
+[02/28/2024 18:05] t0x1c.c0de
+Congrats @0xpiken 👍🏻
+
+{Reactions}
+❤️ 
+
+[02/28/2024 19:04] 0xjuancito
+gg everyone! Congrats to the top wardens! 🏆
+
+
+[02/28/2024 19:51] 0xaman.
+my first accepted finding on arena . feels proud
+
+
+[02/28/2024 19:52] 0xaman.
+@PaperParachute | C4 why it show 2 medium risk and in report it show 3 identified finding?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - salty-jan16 [1194275679924129893].txt_Files/image-92947.png
+
+{Reactions}
+hi5 🎉 
+
+[02/28/2024 19:54] 0xjuancito
+Probably +1 for QA or Gas report
+
+
+[02/28/2024 19:56] 0xaman.
+thanks for helping
+
+{Reactions}
+❤️ 
+
+[02/28/2024 19:58] kingsman_0047
+When will the report be published?
+
+
+[02/28/2024 21:00] forgebyola
+My first leaderboard
+
+
+[02/28/2024 21:00] forgebyola
+Grateful
+
+
+[02/28/2024 21:02] forgebyola
+6 unique highs and 31 meds is absolutely insane considering this had already gone through an audit. Goes to show the power of "decentralised" audits as I'll put it🔥🔥
+
+{Reactions}
+🔥 (3) 💯 
+
+[02/28/2024 22:13] banditx0x
+is the mitigation review open for non-backstagoors?
+
+
+[02/28/2024 23:34] danielcota
+Awesome work everyone!  It was a definitely pleasure sponsoring this audit! 😀
+
+{Reactions}
+hi5 (11) 🤝 
+
+[02/29/2024 00:49] jes16jupyter
+Nice, 1h + 4m. I am quailified for backstage now.
+
+
+[02/29/2024 01:11] 0xpiken
+Congrats @t0x1c too!
+
+{Reactions}
+🫡 
+
+[02/29/2024 02:26] olanre_waju
+@0xpiken and @t0x1c  amazing findings! 👏 👏
+
+{Reactions}
+🫡 (3) 
+
+[02/29/2024 05:09] t0x1c.c0de
+unfortunately not, mate
+
+
+[02/29/2024 08:40] .ready_player_2
+Congratz to everyone👏
+
+
+[02/29/2024 08:55] cloudellie
+@aman @forgebyola Congrats on your first awards!
+
+{Reactions}
+🙏 (2) 
+
+[02/29/2024 12:31] guy_in0xnito
+Does the payout goes directly to metamask
+Or do we have to do some import stuff out in metamask ?
+
+
+[02/29/2024 12:39] guy_in0xnito
+To the judges for this fast judging 
+Thanks
+
+
+[02/29/2024 13:16] kaveyjoe
+Directly goes to wallet address  you provided on polygon Network.
+
+
+[02/29/2024 16:56] guy_in0xnito
+Didn't see any !
+
+
+[02/29/2024 18:33] 0xauditism
+they haven't been sent just yet
+
+
+[02/29/2024 19:11] 7a4raf
+Keep an eye on the announcement channel, also make sure to import usdc on polygon network
+
+
+[02/29/2024 20:22] guy_in0xnito
+Wanted to see this
+
+
+[02/29/2024 21:35] banditx0x
+2 quesetions:
+
+
+[02/29/2024 21:35] banditx0x
+is Salty Mitigation Review open to non-backstagooors?
+
+
+[02/29/2024 21:35] banditx0x
+Also will the report be published before the mitigation review?
+
+
+[02/29/2024 23:13] 0xbinchook
+> Salty Mitigation Review open to non-backstagooors?
+No  
+
+https://discord.com/channels/810916927919620096/1004448408829960383/1212464885619892274
+```
+Eligible role(s): 
+Must be certified and have +backstage access.
+```
+
+> Also will the report be published before the mitigation review?
+🤷
+
+{Reactions}
+😿 (2) 
+
+[03/01/2024 04:58] haxatron1
+They aren't open unfortunately, but if it helps, the people selected were rank 1, 2 and 4, and you would probably have been placed as an alternate if you did sign up
+
+
+[03/01/2024 04:59] haxatron1
+So it probably wouldnt have mattered anyway
+
+
+[03/01/2024 04:59] haxatron1
+But i agree the backstage requirements for mitigation review are a bit unfair to you
+
+
+[03/07/2024 12:03] scoolj
+is the report out?
+
+
+[03/08/2024 12:56] _paperparachute
+Not yet, it'll be visible on the website when it is 🙂
+
+
+[03/08/2024 12:57] _paperparachute
+There is also a mitigation review, so the original report won't be released until the mitigation review information is added.
+
+
+[03/09/2024 06:28] scoolj
+Okay.  Thank you
+
+
+[03/22/2024 21:08] itsmetechjay
+ℹ️ This channel is pending archive.   As a result, any private threads will be permanently deleted on Friday, 29 March 2024. Please make sure to grab anything you might need before then.
+
+
+[03/28/2024 21:23] itsmetechjay
+ℹ️ Reminder: this channel will be deleted in 24 hours.
+
+
+==============================================================
+Exported 589 message(s)
+==============================================================
